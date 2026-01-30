@@ -1,27 +1,20 @@
-/*!
- * This is a demonstartion of how to interface with HireHop widgets
- * This code will insert the word Hello after the refresh button on
- * the notes widget.
- * 
- * For notes we don't need to wait for the document to be ready using
- * $(document).ready(function(){, as it is loaded before this plugin,
- * but it is necessary to do this for other JavaScript widgets that
- * are loaded afterwards.
-*/
 $(document).ready(function(){
-	// Check if the notes widget exists
-	if(typeof($.custom.notes)!='undefined')
-	{
-		// Redifine job_edit, move name to after telephone
-		$.widget("custom.notes", $.custom.notes,
-		{
-			_init_main: function()
-			{
-				// Call the old _init_main
-				this._super(arguments);
-				// Add an hello after the refresh button
-				$("<span>",{ html:" Hello"}).insertAfter(this.btnRefresh);
-			}
-		});
-	}
+// Check if the notes widget exists (if user is defined a user is logged in, and if doc_type is defined, you are in a HireHop page)
+if(typeof($.custom.notes)!==”undefined” && typeof(user)!==”undefined” && typeof(doc_type)!==”undefined” && hh_api_version<=1.3) {
+// Redefine notes widget
+$.widget(“custom.notes“, $.custom.notes, {
+_init_main: function() {
+// Call the old _init_main
+this._super();
+// You could put the code here or call a new function you created
+this.new_function_name();
+},
+// Add your own new function into the widget if you want
+new_function_name: function() {
+// Add an hello after the refresh button
+$(“<span>“,{ html:” Hello” }).insertAfter(this.btnRefresh);
+},
 });
+}
+});
+
