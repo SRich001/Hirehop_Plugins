@@ -8,7 +8,6 @@ $(document).ready(function(){
 		// Insert the select in place of the depot label
 		$("#search_by_number").replaceWith(test);
 	
-    
     });
 
 
