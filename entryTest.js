@@ -8,6 +8,6 @@ $(document).ready(function()
 		// Fill it with depots
 	
         // Insert the select in place of the depot label
-		$("#job_number").replaceWith(test);
+		$("#accordion").replaceWith(test);
 	});
 
