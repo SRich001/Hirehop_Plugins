@@ -1,7 +1,22 @@
 $(document).ready(function()
 	
 	{
-        var stuff = $("<p> Cereal Number </p>")
+        var stuff = $(
+            "<div style=\"max-width:655px; text-alight:right; display:inline-block;\">"
+              +"<div style=\"margin-top:6px\">"
+                +"<div style=\"width:auto;text-align:right;display:inline-block\" class=\"lang label\" data-label=\"serialNumTxt\">"
+                  + "Serial Number :"
+                +"</div>"
+                +"<div style = \"display:inline-block\">"
+                +"<input=\"serial_number\" class=\"numeric_input number_search\" inputMode=\"numeric\">"
+                  +"&nbsp;"
+                   +"<button class=\"rec_open\" type=\"submit\"><button/>"
+                +"</div>"
+               +"</div>"
+            +"</div>")
+
+
         $("#search_by_number_content").append(stuff);
         
 	});
+    
