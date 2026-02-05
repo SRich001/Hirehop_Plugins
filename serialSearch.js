@@ -2,7 +2,7 @@ $(document).ready(function()
 	
 	{
         var stuff = $(
-            "<div style=\"max-width:655px; text-align:right; display:inline-block;\">"
+            "<div style=\"max-width:655px; text-align:right; display:inline-block\">"
               +"<div style=\"margin-top:6px\">"
                 +"<div style=\"width:auto;text-align:right;display:inline-block\" class=\"lang label\" data-label=\"serialNumTxt\">"
                   + "Serial number :"
