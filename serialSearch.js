@@ -6,7 +6,7 @@ $(document).ready(function()
               +"<div style=\"margin-top:6px\">"
                 +"<div style=\"width:auto;text-align:right;display:inline-block\" class=\"lang label\" data-label=\"serialNumTxt\">"
                   + "Serial number"
-                  + " :"
+                  + " : "
                 +"</div>"
                 +"<div style = \"display:inline-block\">"
                  +"<form>"
