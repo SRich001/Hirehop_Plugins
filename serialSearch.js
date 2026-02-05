@@ -7,6 +7,7 @@ $(document).ready(function()
                 +"<div style=\"width:auto;text-align:right;display:inline-block\" class=\"lang label\" data-label=\"serialNumTxt\">"
                   + "Serial number : "
                 +"</div>"
+                   +"&nbsp;"
                 +"<div style = \"display:inline-block\">"
                  +"<form>"
                   +"<input id=\"serial_number\" class=\"numeric_input number_search\" inputMode=\"numeric\" type=\"tel\" maxlength=\"15\">"
