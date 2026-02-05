@@ -5,7 +5,7 @@ $(document).ready(function()
             "<div style=\"max-width:655px; text-align:right; display:inline-block\">"
               +"<div style=\"margin-top:6px\">"
                 +"<div style=\"width:auto;text-align:right;display:inline-block\" class=\"lang label\" data-label=\"serialNumTxt\">"
-                  + "Serial number :"
+                  + "Serial number : "
                 +"</div>"
                 +"<div style = \"display:inline-block\">"
                  +"<form>"
