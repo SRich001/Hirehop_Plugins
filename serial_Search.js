@@ -1,5 +1,4 @@
-//PLUGIN: SERIAL_SEARCH  
-//VERSION: 1
+//PLUGIN: SERIAL_SEARCH V1
 //DESC: Allows you to search for jobs using their serial number on the home page by adding a new input bar that accepts serial numbers.
 
 $(document).ready(function()
