@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-    $ajax.({
+    $.ajax({
     
         url: "https://myhirehop.com//modules/consumables/tracked_asset_list.php",
         method:'get',
