@@ -2,7 +2,7 @@ $(document).ready(function(){
 
     $.ajax({
     
-        url: "https://myhirehop.com/modules/consumables/tracked_asset_list.php",
+        url: "https://myhirehop.com/api/azdWSDNRTDJkcFBDRE9iQWhJRVdnOUxQQ25HNWJaeWlCRC9SMnI5UFVtMD0/get_assets.php",
         async: false,
         method:'get',
         dataType: 'json',
