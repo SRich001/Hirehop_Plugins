@@ -3,6 +3,7 @@ $(document).ready(function(){
     $.ajax({
     
         url: "https://myhirehop.com/modules/consumables/tracked_asset_list.php",
+        async: false,
         method:'get',
         dataType: 'json',
         success: function (data) {
