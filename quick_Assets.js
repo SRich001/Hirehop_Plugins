@@ -29,10 +29,15 @@ $(document).ready(function(){
 
     if(curLoc != "https://myhirehop.com/modules/suppliers/") return;
 
-    console.log(curLoc);
- 
-    $("ui-state-default ui-corner-top").append(assetTabHTML);
+    var element = document.querySelector('[aria-labelledby="ui-id-3"]');
+
+    console.log(element);
+
     
+
+ 
+   
+
     //$(assetBtnHtml).insertAfter("#ui-id-24");
     
 
