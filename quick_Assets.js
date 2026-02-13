@@ -15,12 +15,25 @@ $(document).ready(function(){
 
     )
 
+    var assetTabHTML = $(
+
+            "<li data-kind=\"assets\" class=\"assets_tab ui-state-default ui-corner-top\" role=\"tab\" tabindex=\"-1\" aria-controls=\"assets_tab\" aria-labelledby=\"ui-id-5\" aria-selected=\"false\" aria-expanded=\"false\">"
+             + "<a href=\"\" > Assets </a>"
+             +  "</li>"
+
+    )
+
+
+
     var curLoc = $(location).prop('href');
 
     if(curLoc != "https://myhirehop.com/modules/suppliers/") return;
 
     console.log(curLoc);
-
-    $(assetBtnHtml).insertAfter("#ui-id-24");
+ 
+    $("ui-state-default ui-corner-top").append(assetTabHTML);
+    
+    //$(assetBtnHtml).insertAfter("#ui-id-24");
+    
 
 })
