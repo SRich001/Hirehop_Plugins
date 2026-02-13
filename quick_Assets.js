@@ -29,7 +29,7 @@ $(document).ready(function(){
 
     if(curLoc != "https://myhirehop.com/modules/suppliers/") return;
 
-    var element = document.querySelector('[aria-labelledby="ui-id-3"]');
+    var element = document.querySelector('[id="header_depot"]');
 
     console.log(element);
 
