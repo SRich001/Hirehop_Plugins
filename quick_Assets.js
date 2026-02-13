@@ -2,7 +2,7 @@ $(document).ready(function(){
 
     //add if statement to check page
 
-    
+    console.log("HI");
 
     var assetBtnHtml = $(
 
