@@ -6,14 +6,14 @@ $(document).ready(function(){
 
     var assetBtnHtml = $(
 
-        <li class="menu_edit lockable ui-menu-item" id="ui-id-EX1" tabindex="-1" role="menuitem">
-            ::marker
-            <span class="ui-icon ui-icon-pencil">
-                ::after
-            </span>
-            "Go to Assets"
+        "<li class=\"menu_edit lockable ui-menu-item\" id=\"ui-id-EX1\" tabindex=\"-1\" role=\"menuitem\">"
+            + "::marker"
+            + "<span class=\"ui-icon ui-icon-pencil\">"
+                + "::after"
+            + "</span>"
+               + "Go to Assets"
 
-        </li>
+        + "</li>"
 
     )
 
