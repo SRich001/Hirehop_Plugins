@@ -18,9 +18,10 @@ $(document).ready(function(){
     )
 
     var curLoc = $(location).prop('href');
-    if(curLoc != "https://myhirehop.com/modules/suppliers/") return;
 
-    console.log("Im HERE GIRL");
+    console.log(curLoc);
+
+    if(curLoc != "https://myhirehop.com/modules/suppliers/") return;
 
     $(assetBtnHtml).insertAfter("#ui-id-24");
 
