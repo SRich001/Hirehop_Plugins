@@ -1,8 +1,8 @@
-//PLUGIN: HIRE_TO_WIRE V5
+//PLUGIN: HIRE_TO_WIRE V7
 //DESC: Change all occurences of "Hire Stock Management" to "Livewire Stock"
 $(document).ready(function(){
 
-    if(typeof(user)!=='undefined' && typeof(doc_type)!=='undefined'){
+    if(typeof(user)!=='undefined'){
 
 
         lang.stockManageTxt = "Livewire Stock";

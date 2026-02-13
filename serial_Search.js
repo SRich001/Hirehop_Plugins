@@ -1,9 +1,7 @@
-//PLUGIN: SERIAL_SEARCH V1
-//DESC: Allows you to search for jobs using their serial number on the home page by adding a new input bar that accepts serial numbers.
+//PLUGIN: SERIAL_SEARCH V3
+//DESC: Replaces the barcode search with a Serial Number search and changes instances of "Barcode" to "Serial Number" on all pages. 
+$(document).ready(function(){
 
-$(document).ready(function()
-	
-	{
         var stuff = $(
             "<div style=\"max-width:655px; text-align:right; display:inline-block\">"
               +"<div style=\"margin-top:6px\">"
