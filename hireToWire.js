@@ -1,3 +1,5 @@
+//PLUGIN: HIRE_TO_WIRE V1
+//DESC: Change all occurences of "Hire Stock Management" to "Livewire Stock"
 $(document).ready(function(){
 
     if(typeof(user)!=='undefined' && typeof(doc_type)!=='undefined'){
@@ -7,8 +9,7 @@ $(document).ready(function(){
 
         //$('div:contains("Hire stock management")').replaceWith("<div class=\"tile_title\" data-type=\"103\">Hire stock management</div>");
 
-        console.log(lang.tiles[103]);
-    
+        lang.tiles[103] = "Livewire Stock"
 
     }
 
