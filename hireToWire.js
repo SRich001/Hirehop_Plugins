@@ -5,11 +5,12 @@ $(document).ready(function(){
     if(typeof(user)!=='undefined' && typeof(doc_type)!=='undefined'){
 
 
-        lang.stockManageTxt = "Livewire Stock"
+        lang.stockManageTxt = "Livewire Stock";
 
         //$('div:contains("Hire stock management")').replaceWith("<div class=\"tile_title\" data-type=\"103\">Hire stock management</div>");
 
-        lang.tiles[103] = "Livewire Stock"
+        lang.tiles[103] = "Livewire Stock";
+        console.log(lang.tiles[103]);
 
     }
 
