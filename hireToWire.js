@@ -7,6 +7,8 @@ $(document).ready(function(){
 
         $('div:contains("Hire stock management")').replaceWith("<div class=\"tile_title\" data-type=\"103\">Hire stock management</div>");
 
+        consolelog(lang.tiles[103]);
+
     
 
     }
