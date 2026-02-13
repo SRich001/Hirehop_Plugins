@@ -2,7 +2,7 @@ $(document).ready(function(){
 
     //add if statement to check page
 
-    if(curLoc != "https://myhirehop.com/modules/suppliers/") return;
+    
 
     var assetBtnHtml = $(
 
@@ -16,6 +16,9 @@ $(document).ready(function(){
         + "</li>"
 
     )
+
+    var curLoc = $(location).prop('href');
+    if(curLoc != "https://myhirehop.com/modules/suppliers/") return;
 
     $(assetBtnHtml).insertAfter("#ui-id-24");
 
