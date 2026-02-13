@@ -5,9 +5,9 @@ $(document).ready(function(){
 
         lang.stockManageTxt = "Livewire Stock"
 
-        $('div:contains("Hire stock management")').replaceWith("<div class=\"tile_title\" data-type=\"103\">Hire stock management</div>");
+        //$('div:contains("Hire stock management")').replaceWith("<div class=\"tile_title\" data-type=\"103\">Hire stock management</div>");
 
-        consolelog(lang.tiles[103]);
+        consolelog(lang.tiles("103"));
 
     
 
