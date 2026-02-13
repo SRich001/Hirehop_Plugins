@@ -29,7 +29,7 @@ $(document).ready(function(){
 
     if(curLoc != "https://myhirehop.com/modules/suppliers/") return;
 
-    var element = document.querySelector('[role="tablist"]');
+    var element = document.querySelectorAll('.ui-button');
 
     console.log(element);
 
