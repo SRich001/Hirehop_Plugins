@@ -1,4 +1,4 @@
-//PLUGIN: HIRE_TO_WIRE V1
+//PLUGIN: HIRE_TO_WIRE V5
 //DESC: Change all occurences of "Hire Stock Management" to "Livewire Stock"
 $(document).ready(function(){
 
