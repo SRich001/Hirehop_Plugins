@@ -20,6 +20,8 @@ $(document).ready(function(){
     var curLoc = $(location).prop('href');
     if(curLoc != "https://myhirehop.com/modules/suppliers/") return;
 
+    console.log("Im HERE GIRL");
+
     $(assetBtnHtml).insertAfter("#ui-id-24");
 
 })
