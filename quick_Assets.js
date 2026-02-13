@@ -17,12 +17,12 @@ $(document).ready(function(){
 
     )
 
-    var curLoc = $(location).prop('href');
+    //var curLoc = $(location).prop('href');
 
-    console.log(curLoc);
+    //console.log(curLoc);
 
-    if(curLoc != "https://myhirehop.com/modules/suppliers/") return;
+    //if(curLoc != "https://myhirehop.com/modules/suppliers/") return;
 
-    $(assetBtnHtml).insertAfter("#ui-id-24");
+    //$(assetBtnHtml).insertAfter("#ui-id-24");
 
 })
