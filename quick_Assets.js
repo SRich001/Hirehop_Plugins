@@ -2,8 +2,6 @@ $(document).ready(function(){
 
     //add if statement to check page
 
-    console.log("HI");
-
     var assetBtnHtml = $(
 
         "<li class=\"menu_edit lockable ui-menu-item\" id=\"ui-id-EX1\" tabindex=\"-1\" role=\"menuitem\">"
@@ -17,12 +15,12 @@ $(document).ready(function(){
 
     )
 
-    //var curLoc = $(location).prop('href');
+    var curLoc = $(location).prop('href');
 
-    //console.log(curLoc);
+    if(curLoc != "https://myhirehop.com/modules/suppliers/") return;
 
-    //if(curLoc != "https://myhirehop.com/modules/suppliers/") return;
+    console.log(curLoc);
 
-    //$(assetBtnHtml).insertAfter("#ui-id-24");
+    $(assetBtnHtml).insertAfter("#ui-id-24");
 
 })
