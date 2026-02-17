@@ -17,7 +17,10 @@ $(document).ready(function(){
         console.log(checkUrl);
         
         if(checkUrl == "modules/stock/?serial="){
-          console.log("YOU GOT IT!");
+
+          serialNum = curLoc.slice(44, -12);
+          console.log(serialNum);
+        
         }
         
         var searchBar = $( 
