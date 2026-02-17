@@ -7,7 +7,8 @@ function getSerial(){
           input = document.getElementById("serial_number").value;
           alert(input);
           console.log(input);
-          window.location.replace("https://myhirehop.com/modules/stock/#assets_tab");
+          url = "https://myhirehop.com/modules/stock/#assets_tab" + input
+          window.location.replace(url);
         };
 
 $(document).ready(function(){
