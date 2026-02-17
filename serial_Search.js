@@ -16,7 +16,10 @@ $(document).ready(function(){
 
         console.log(checkUrl);
         
-
+        if(checkUrl == "/modules/stock/"){
+          console.log("YOU GOT IT!");
+        }
+        
         var searchBar = $( 
             "<div style=\"max-width:655px; text-align:right; display:inline-block\">"
               +"<div style=\"margin-top:6px\">"
