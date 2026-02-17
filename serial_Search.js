@@ -11,13 +11,13 @@ function getSerial(){
 $(document).ready(function(){
 
         var input = "none";
-        
         var curLoc = $(location).prop('href');
-        if(curLoc == "https://myhirehop.com/modules/stock/#assets_tab"){
 
-          console.log(input);
-
-        }
+        console.log(curLoc.slice(0, 36) + curloc.slice(-1, -11));
+        
+        if(curLoc.slice(0, 36) + curloc.slice(-1, -11) == "https://myhirehop.com/modules/stock/#assets_tab"){
+          console.log("GOT IT!");
+        };
 
         var searchBar = $( 
             "<div style=\"max-width:655px; text-align:right; display:inline-block\">"
