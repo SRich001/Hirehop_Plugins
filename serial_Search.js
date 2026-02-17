@@ -12,13 +12,10 @@ $(document).ready(function(){
 
         var input = "none";
         var curLoc = $(location).prop('href');
-        var checkUrl = (curLoc.slice(0, 36) + curLoc.slice(-1, -11));
+        var checkUrl = (curLoc.slice(22, 36));
 
         console.log(checkUrl);
         
-        if(curLoc.slice(0, 36) + curLoc.slice(-1, -11) == "https://myhirehop.com/modules/stock/#assets_tab"){
-          console.log("GOT IT!");
-        };
 
         var searchBar = $( 
             "<div style=\"max-width:655px; text-align:right; display:inline-block\">"
