@@ -1,4 +1,4 @@
-//PLUGIN: SERIAL_SEARCH V5
+//PLUGIN: SERIAL_SEARCH V6
 //DESC: Replaces the barcode search with a Serial Number search and changes instances of "Barcode" to "Serial Number" on all pages. 
 $(document).ready(function(){
 
