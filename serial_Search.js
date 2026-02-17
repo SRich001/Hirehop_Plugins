@@ -1,7 +1,9 @@
-//PLUGIN: SERIAL_SEARCH V14
+//PLUGIN: SERIAL_SEARCH V16
 //DESC: Replaces the barcode search with a Serial Number search and changes instances of "Barcode" to "Serial Number" on all pages. 
 
-function getSerial(input){
+var input = "none";
+
+function getSerial(){
           input = document.getElementById("serial_number").value;
           alert(input);
           console.log(input);
@@ -10,7 +12,7 @@ function getSerial(input){
 
 $(document).ready(function(){
         
-        var input = "none";
+        
         var curLoc = $(location).prop('href');
 
         if(curLoc == "https://myhirehop.com/modules/stock/#assets_tab"){
@@ -27,9 +29,7 @@ $(document).ready(function(){
                 +"</div>"
                    +"&nbsp;"
                 +"<div style = \"display:inline-block\">"
-                 +"<form action=\"javascript:getSerial("
-                 + {input}
-                 +");\">"
+                 +"<form action=\"javascript:getSerial();\">"
                   +"<input id=\"serial_number\" class=\"numeric_input number_search\" inputMode=\"numeric\" type=\"tel\" maxlength=\"15\">"
                    +"&nbsp;"
                   +"<button class=\"rec_open\" type=\"submit\"></button>"
