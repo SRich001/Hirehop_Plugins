@@ -13,13 +13,28 @@ $(document).ready(function(){
         var input = "none";
         var curLoc = $(location).prop('href');
         var checkUrl = (curLoc.slice(22, 44));
-
-        console.log(checkUrl);
         
         if(checkUrl == "modules/stock/?serial="){
 
-          serialNum = curLoc.slice(44, -12);
-          console.log(serialNum);
+          serialNum = curLoc.slice(44, -11);
+
+          $.widget("custom.stock_equipment", $.custom.stock_equipment,{
+
+            _init_main: function()
+            {
+              this._super(arguments);
+              $("#gs_astSERIAL").replaceWith(
+                
+                "<input" 
+                +"value="
+                + serialNum
+                + "type=\"text\" role=\"textbox\" searchopermenu=\"true\" name=\"SERIAL\" id=\"gs_astSERIAL\" clearsearch=\"true\" size=\"20\" class=\"ui-widget-content ui-corner-all\"></input>"
+                          
+              );
+
+
+            }
+          })
         
         }
         
@@ -45,5 +60,6 @@ $(document).ready(function(){
 
 	});
 
+  //id="gs_astSERIAL"
 
     
