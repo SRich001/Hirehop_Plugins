@@ -1,10 +1,11 @@
 //PLUGIN: SERIAL_SEARCH V13
 //DESC: Replaces the barcode search with a Serial Number search and changes instances of "Barcode" to "Serial Number" on all pages. 
 
- function getSerial(){
+function getSerial(){
           var input = document.getElementById("serial_number").value;
           alert(input);
           console.log(input);
+          window.location.replace("https://myhirehop.com/modules/stock/#assets_tab");
         };
 
 $(document).ready(function(){
@@ -32,7 +33,6 @@ $(document).ready(function(){
 
         //REDIRECT AND PASTE SEARCHED NUMBER AUTOMATICALLY?
 
-        //save user input
         //Extend equipment.js such that it pastes user input in the field. 
 
         //action=\"https://myhirehop.com/modules/stock/#assets_tab\"
