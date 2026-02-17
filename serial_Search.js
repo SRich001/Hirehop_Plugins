@@ -13,7 +13,7 @@ $(document).ready(function(){
                  +"<form action=\"https://myhirehop.com/modules/stock/#assets_tab\">"
                   +"<input id=\"serial_number\" class=\"numeric_input number_search\" inputMode=\"numeric\" type=\"tel\" maxlength=\"15\">"
                    +"&nbsp;"
-                  +"<button class=\"rec_open\" type=\"submit\"></button>"
+                  +"<button class=\"rec_open\" type=\"submit\" onclick=\"getSerial();\"></button>"
                  +"</form>"
                 +"</div>"
                +"</div>"
@@ -22,9 +22,17 @@ $(document).ready(function(){
 
         $("#search_by_number_content").append(searchBar);
 
+        function getSerial(){
+          var input = document.getElementById("serial_number").value;
+          alert(input);
+          console.log(input);
+        };
+
+
+        
+
         //REDIRECT AND PASTE SEARCHED NUMBER AUTOMATICALLY?
 
-        //redirect to #assets_tab
         //save user input
         //Extend equipment.js such that it pastes user input in the field. 
 
