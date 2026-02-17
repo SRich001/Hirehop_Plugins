@@ -28,7 +28,7 @@ $(document).ready(function(){
                    +"&nbsp;"
                 +"<div style = \"display:inline-block\">"
                  +"<form action=\"javascript:getSerial("
-                 + input
+                 + {input}
                  +");\">"
                   +"<input id=\"serial_number\" class=\"numeric_input number_search\" inputMode=\"numeric\" type=\"tel\" maxlength=\"15\">"
                    +"&nbsp;"
