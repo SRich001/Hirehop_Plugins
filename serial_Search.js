@@ -5,9 +5,7 @@ var input = "none";
 
 function getSerial(){
           input = document.getElementById("serial_number").value;
-          alert(input);
-          console.log(input);
-          url = "https://myhirehop.com/modules/stock/#assets_tab" + input
+          url = "https://myhirehop.com/modules/stock/#assets_tab"
           window.location.replace(url);
         };
 
@@ -15,7 +13,6 @@ $(document).ready(function(){
         
         
         var curLoc = $(location).prop('href');
-
         if(curLoc == "https://myhirehop.com/modules/stock/#assets_tab"){
 
           console.log(input);
