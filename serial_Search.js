@@ -11,8 +11,9 @@ function getSerial(input){
 $(document).ready(function(){
         
         var input = "none";
+        var curLoc = $(location).prop('href');
 
-        if(curLoc = "https://myhirehop.com/modules/stock/#assets_tab"){
+        if(curLoc == "https://myhirehop.com/modules/stock/#assets_tab"){
 
           console.log(input);
 
