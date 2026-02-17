@@ -16,7 +16,7 @@ $(document).ready(function(){
 
         console.log(checkUrl);
         
-        if(checkUrl == "/modules/stock/"){
+        if(checkUrl == "modules/stock/" && checkUrl.length > 54){
           console.log("YOU GOT IT!");
         }
         
