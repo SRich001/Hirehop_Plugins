@@ -1,11 +1,11 @@
-//PLUGIN: SERIAL_SEARCH V6
+//PLUGIN: SERIAL_SEARCH V13
 //DESC: Replaces the barcode search with a Serial Number search and changes instances of "Barcode" to "Serial Number" on all pages. 
 
  function getSerial(){
           var input = document.getElementById("serial_number").value;
           alert(input);
           console.log(input);
-        }
+        };
 
 $(document).ready(function(){
 
