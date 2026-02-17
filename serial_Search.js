@@ -1,6 +1,5 @@
-//PLUGIN: SERIAL_SEARCH V16
+//PLUGIN: SERIAL_SEARCH V18
 //DESC: Replaces the barcode search with a Serial Number search and changes instances of "Barcode" to "Serial Number" on all pages. 
-
 
 
 function getSerial(){
