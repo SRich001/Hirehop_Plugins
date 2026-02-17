@@ -12,8 +12,9 @@ $(document).ready(function(){
 
         var input = "none";
         var curLoc = $(location).prop('href');
+        var checkUrl = (curLoc.slice(0, 36) + curLoc.slice(-1, -11));
 
-        console.log(curLoc.slice(0, 36) + curLoc.slice(-1, -11));
+        console.log(checkUrl);
         
         if(curLoc.slice(0, 36) + curLoc.slice(-1, -11) == "https://myhirehop.com/modules/stock/#assets_tab"){
           console.log("GOT IT!");
