@@ -2,6 +2,12 @@
 //DESC: Replaces the barcode search with a Serial Number search and changes instances of "Barcode" to "Serial Number" on all pages. 
 $(document).ready(function(){
 
+        function getSerial(){
+          var input = document.getElementById("serial_number").value;
+          alert(input);
+          console.log(input);
+        };
+
         var searchBar = $(
             "<div style=\"max-width:655px; text-align:right; display:inline-block\">"
               +"<div style=\"margin-top:6px\">"
@@ -22,16 +28,6 @@ $(document).ready(function(){
 
         $("#search_by_number_content").append(searchBar);
 
-        function getSerial(){
-          var input = document.getElementById("serial_number").value;
-          alert(input);
-          console.log(input);
-        };
-
-        
-
-
-        
 
         //REDIRECT AND PASTE SEARCHED NUMBER AUTOMATICALLY?
 
