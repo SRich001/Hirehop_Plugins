@@ -18,7 +18,7 @@ $(document).ready(function(){
 
           serialNum = curLoc.slice(44, -11);
 
-          document.querySelector('#gs_astSERIAL');
+          document.querySelector('.ui-button');
 
           // $.widget("custom.stock_equipment", $.custom.stock_equipment,{
 
