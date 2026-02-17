@@ -16,7 +16,7 @@ $(document).ready(function(){
 
         console.log(checkUrl);
         
-        if(checkUrl == "modules/stock/" && curLoc > 54){
+        if(checkUrl == "modules/stock/" && curLoc > 43){
           console.log("YOU GOT IT!");
         }
         
