@@ -12,11 +12,11 @@ $(document).ready(function(){
 
         var input = "none";
         var curLoc = $(location).prop('href');
-        var checkUrl = (curLoc.slice(22, 36));
+        var checkUrl = (curLoc.slice(22, 44));
 
         console.log(checkUrl);
         
-        if(checkUrl == "modules/stock/"){
+        if(checkUrl == "modules/stock/?serial="){
           console.log("YOU GOT IT!");
         }
         
