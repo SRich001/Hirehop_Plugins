@@ -18,11 +18,11 @@ $(document).ready(function(){
 
           serialNum = curLoc.slice(44, -11);
 
-          $.widget("custom.stock_equipment", $.custom.stock_equipment,{
+          // $.widget("custom.stock_equipment", $.custom.stock_equipment,{
 
-            _init_main: function()
-            {
-              this._super(arguments);
+          //   _init_main: function()
+          //   {
+          //     this._super(arguments);
               $("#gs_astSERIAL").replaceWith(
                 
                 "<input" 
@@ -30,11 +30,11 @@ $(document).ready(function(){
                 + serialNum
                 + "type=\"text\" role=\"textbox\" searchopermenu=\"true\" name=\"SERIAL\" id=\"gs_astSERIAL\" clearsearch=\"true\" size=\"20\" class=\"ui-widget-content ui-corner-all\"></input>"
                           
-              );
+               );
 
 
-            }
-          })
+          //   }
+          // })
         
         }
         
