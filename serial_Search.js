@@ -15,7 +15,7 @@ $(document).ready(function(){
 
         console.log(curLoc.slice(0, 36) + curLoc.slice(-1, -11));
         
-        if(curLoc.slice(0, 36) + curloc.slice(-1, -11) == "https://myhirehop.com/modules/stock/#assets_tab"){
+        if(curLoc.slice(0, 36) + curLoc.slice(-1, -11) == "https://myhirehop.com/modules/stock/#assets_tab"){
           console.log("GOT IT!");
         };
 
