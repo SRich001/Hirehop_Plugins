@@ -10,7 +10,7 @@ $(document).ready(function(){
                 +"</div>"
                    +"&nbsp;"
                 +"<div style = \"display:inline-block\">"
-                 +"<form onsubmit=\"getSerial();\"action=\"https://myhirehop.com/modules/stock/#assets_tab\">"
+                 +"<form onsubmit=\"getSerial();\">"
                   +"<input id=\"serial_number\" class=\"numeric_input number_search\" inputMode=\"numeric\" type=\"tel\" maxlength=\"15\">"
                    +"&nbsp;"
                   +"<button class=\"rec_open\" type=\"submit\"></button>"
@@ -36,6 +36,6 @@ $(document).ready(function(){
         //save user input
         //Extend equipment.js such that it pastes user input in the field. 
 
-        
+        //action=\"https://myhirehop.com/modules/stock/#assets_tab\"
 	});
     
