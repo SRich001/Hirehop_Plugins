@@ -10,7 +10,7 @@ $(document).ready(function(){
                 +"</div>"
                    +"&nbsp;"
                 +"<div style = \"display:inline-block\">"
-                 +"<form onsubmit=\"getSerial();\">"
+                 +"<form action=\"javascript:getSerial();\">"
                   +"<input id=\"serial_number\" class=\"numeric_input number_search\" inputMode=\"numeric\" type=\"tel\" maxlength=\"15\">"
                    +"&nbsp;"
                   +"<button class=\"rec_open\" type=\"submit\"></button>"
@@ -27,6 +27,8 @@ $(document).ready(function(){
           alert(input);
           console.log(input);
         };
+
+        
 
 
         
