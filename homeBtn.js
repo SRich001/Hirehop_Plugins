@@ -7,17 +7,17 @@ function goHome(){
 
 $(document).ready(function()
 {
-    if(url == "https://myhirehop.com/home.php") return;
+    var curLoc = $(location).prop('href');
+    if(curLoc == "https://myhirehop.com/home.php") return;
 
     var btn = $(
 
         "<button id=\"home-btn\" class=\"ui-button ui-state-default ui-button-text-icon-primary\" role=\"button\" onclick=\"goHome()\">"
              + "<span class=\"ui-button-icon-primary ui-icon ui-icon-home\">"  
              + "</span>"
-           +  "</button>"
+           +  "</button>" 
     )
 
     $("#hirehop_header_bar").append(btn);
 
-     
 });
