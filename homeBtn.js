@@ -12,13 +12,37 @@ $(document).ready(function()
 
     var btn = $(
 
-        "<button id=\"home-btn\" class=\"ui-button ui-state-default ui-button-text-icon-primary\" role=\"button\" onclick=\"goHome()\">"
-             + "<span class=\"ui-button-icon-primary ui-icon ui-icon-home\">"  
-             + "</span>"
-             +  "</button>" 
+        "<div id=\"home_panel\" style=\"width:auto;height:calc(100%); position:fixed; left:0; top: 0; z-index:1000\">"
+
+            +"<div style=\"width: 20px; position: absolute; top: calc(50% - 70px); left: -21px; cursor: pointer; height: 140px; display: table; text-align: center; opacity: 0.8;\" class=\"ui-widget ui-corner-right ui-state-default\">"
+
+               + "<div style=\"display:table-cell; vertical-align:middle; line-height:12px; cursor:pointer;\">"
+           + "H"
+           + "<br>"
+           + "o"
+           + "<br>"
+           + "m"
+           + "<br>"
+           + "e"
+           + "<br>"
+           + "</div>"
+            
+           + "</div>"
+            
+       + "</div>"
+        
     )
     
-    $("#header_nav_menu_container").append(btn);
+    $(btn).insertAfter( $( "#help_panel" ) );
     
 
 });
+
+
+// "<button id=\"home-btn\" class=\"ui-button ui-state-default ui-button-text-icon-primary\" role=\"button\" onclick=\"goHome()\">"
+        //      + "<span class=\"ui-button-icon-primary ui-icon ui-icon-home\">"  
+        //      + "</span>"
+        //      +  "</button>" 
+
+
+
