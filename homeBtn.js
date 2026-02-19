@@ -16,7 +16,7 @@ $(document).ready(function()
 
         "<div id=\"home_panel\" onclick=\"goHome()\" style=\"width:auto;height:calc(100%); position:fixed; left:0; top: 0; z-index:1000\">"
 
-            +"<div style=\"width: 20px; position: absolute; top: calc(50% - 70px); left: +0px; cursor: pointer; height: 140px; display: table; text-align: center; opacity: 0.8;\" class=\"ui-widget ui-corner-right ui-state-default\">"
+            +"<div id=\"home_panel_style\"style=\"width: 20px; position: absolute; top: calc(50% - 70px); left: +0px; cursor: pointer; height: 140px; display: table; text-align: center; opacity: 0.8;\" class=\"ui-widget ui-corner-right ui-state-default\">"
 
                + "<div style=\"display:table-cell; vertical-align:middle; line-height:12px; cursor:pointer;\">"
            + "H"
@@ -38,7 +38,7 @@ $(document).ready(function()
     $(btn).insertAfter( $( "#help_panel" ) );
 
 
-    $("#home_panel").hover(function() {
+    $("#home_panel_style").hover(function() {
     $(this).addClass("ui-state-hover").addClass("ui-state-highlight").addClass("ui-state-focus").removeClass("ui-state-default");
      }, function() {
     $(this).addClass("ui-state-default").removeClass("ui-state-hover").removeClass("ui-state-highlight").removeClass("ui-state-focus");
