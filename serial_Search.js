@@ -18,12 +18,6 @@ $(document).ready(function(){
 
           serialNum = curLoc.slice(44, -11);
 
-          check1 = document.querySelector('#gs_astSERIAL');
-          console.log(check1);
-          console.log("check");
-          check2 = document.querySelector('.ui-button');
-          console.log(check2);
-      
 
           // $.widget("custom.stock_equipment", $.custom.stock_equipment,{
 
