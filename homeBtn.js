@@ -18,6 +18,6 @@ $(document).ready(function()
            +  "</button>" 
     )
 
-    (btn).insertAfter("#banner1");
+    $(btn).insertAfter("#banner1");
 
 });
