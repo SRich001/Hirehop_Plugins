@@ -15,10 +15,10 @@ $(document).ready(function()
         "<button id=\"home-btn\" class=\"ui-button ui-state-default ui-button-text-icon-primary\" role=\"button\" onclick=\"goHome()\">"
              + "<span class=\"ui-button-icon-primary ui-icon ui-icon-home\">"  
              + "</span>"
-           +  "</button>" 
+             +  "</button>" 
     )
     
-    $("#hirehop_header_bar").append(btn);
+    $(btn).insertBefore( $("#banner1") );
     
 
 });
