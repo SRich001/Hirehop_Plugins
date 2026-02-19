@@ -18,6 +18,6 @@ $(document).ready(function()
            +  "</button>" 
     )
 
-    $("#hirehop_header_bar").append(btn);
+    $("#banner1").append(btn);
 
 });
