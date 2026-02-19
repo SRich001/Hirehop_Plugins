@@ -39,9 +39,9 @@ $(document).ready(function()
 
 
     $("#home_panel").hover(function() {
-    $(this).addClass("ui-state-hover").removeClass("ui-state-default")
+    $(this).addClass("ui-state-hover").addClass("ui-state-highlight").removeClass("ui-state-default");
      }, function() {
-    $(this).addClass("ui-state-default").removeClass("ui-state-hover")
+    $(this).addClass("ui-state-default").removeClass("ui-state-hover").removeClass("ui-state-highlight");
      });
     
 
