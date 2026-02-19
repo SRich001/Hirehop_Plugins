@@ -1,9 +1,15 @@
-//PLUGIN: HOME_BTN V1
+//PLUGIN: HOME_BTN V11
 //DESC: Adds a dedicated home button to the top of the page. 
 
 function goHome(){
     window.location.replace("https://myhirehop.com/home.php");
 }
+
+$("#home_panel").hover(function() {
+    $(this).addClass("ui-state-hover").removeClass("ui-state-default")
+}, function() {
+    $(this).addClass("ui-state-default").removeClass("ui-state-hover")
+});
 
 $(document).ready(function()
 {
