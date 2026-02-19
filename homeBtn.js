@@ -18,7 +18,7 @@ $(document).ready(function()
              +  "</button>" 
     )
     
-    $(btn).insertBefore( $("#banner1") );
+    $("#header_nav_menu_container").append(btn);
     
 
 });
