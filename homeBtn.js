@@ -17,7 +17,8 @@ $(document).ready(function()
              + "</span>"
            +  "</button>" 
     )
-
-    $(btn).insertAfter("#banner1");
+    
+    $("#hirehop_header_bar").append(btn);
+    
 
 });
