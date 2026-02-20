@@ -3,4 +3,4 @@ Hey, If you're reading this, chances are there's something wrong with one of my 
 
 Whoopsies!
 
-Email me at: samuel.richardson@livewireproductions.co.uk OR SRich001@outlook.com 
+Contact me at: samuel.richardson@livewireproductions.co.uk OR SRich001@outlook.com 
