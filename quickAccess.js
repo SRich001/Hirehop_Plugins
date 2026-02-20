@@ -35,7 +35,7 @@ $(document).ready(function()
 
     )
 
-    $(assetsBtn).insertAfter($(".pane-left"));
+    $(assetsBtn).insertAfter($("#accordion"));
 
 })
 
