@@ -1,4 +1,4 @@
-//PLUGIN: SERIAL_SEARCH V25
+//PLUGIN: PART_SEARCH V25
 //DESC: Replaces the barcode search with a Serial Number search and changes instances of "Barcode" to "Serial Number" on all pages. 
 
 
