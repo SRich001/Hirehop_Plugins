@@ -3,6 +3,9 @@
     //     if(curLoc != "https://myhirehop.com/home.php") return;
 
 
+    $(document).ready(function(){
+
+
 
 
         $.widget("custom.job_edit", $custom.job_edit,
@@ -16,8 +19,6 @@
 
               alert("Working!!");
 
-              $("<span>",{ html:" TEST"}).insertAfter(this.memo_section);
-
             }
 
 
@@ -26,6 +27,8 @@
 
          
         
+    });
+
 
 
 
