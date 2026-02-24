@@ -1,4 +1,4 @@
-//PLUGIN: QUICK_ACCESS V1
+//PLUGIN: QUICK_ACCESS V8
 //DESC: Adds shortcut buttons to the homepage for quick access to particular pages. 
 
 function goToAssets(){
