@@ -15,7 +15,7 @@ $(document).ready(function()
     if(curLoc != "https://myhirehop.com/home.php") return;
 
     var assetsBtn = $(
-        "<button  style=\"float: right;:\" id=\"assetsBtn\" class=\"search_tab_top_btn ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon-primary\" role=\"button\">"
+        "<button  onclick=\"goToAssets()\" style=\"float: right;:\" id=\"assetsBtn\" class=\"search_tab_top_btn ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon-primary\" role=\"button\">"
             + "<span class=\"ui-button-icon-primary ui-icon ui-icon-box\">"
             + "</span>"
             + "<span class=\"ui-button-text\"> Assets"
@@ -24,7 +24,7 @@ $(document).ready(function()
     );
 
     var purchaseBtn = $(
-        "<button  style=\"float: right;:\" id=\"purchaseBtn\" class=\"search_tab_top_btn ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon-primary\" role=\"button\">"
+        "<button  onclick=\"goToPurchase()\" style=\"float: right;:\" id=\"purchaseBtn\" class=\"search_tab_top_btn ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon-primary\" role=\"button\">"
             + "<span class=\"ui-button-icon-primary ui-icon ui-icon-shuffle\">"
             + "</span>"
             + "<span class=\"ui-button-text\"> Purchase Orders"
