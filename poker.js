@@ -8,7 +8,7 @@
 
 
 
-        $.widget("custom.job_edit", $custom.job_edit,
+        $.widget("custom.job_edit", $.custom.job_edit,
             {
 
             _init_main: function()
