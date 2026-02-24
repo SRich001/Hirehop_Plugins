@@ -16,11 +16,7 @@ $(document).ready(function()
 
     var assetsBtn = $(
         "<button onclick=\"goToAssets()\" style=\"float: right;:\" id=\"assetsBtn\" class=\"search_tab_top_btn ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon-primary\" role=\"button\">"
-            + "<span class=\"ui-button-icon-primary ui-icon ui-icon-triangle-1-e\">"
-            + "</span>"
-             + "<span class=\"ui-button-icon-primary ui-icon ui-icon-triangle-1-e\">"
-            + "</span>"
-             + "<span class=\"ui-button-icon-primary ui-icon ui-icon-triangle-1-e\">"
+            + "<span class=\"ui-button-icon-primary ui-icon ui-icon-box\">"
             + "</span>"
             + "<span class=\"ui-button-text\"> Assets"
             + "</span>"
@@ -39,6 +35,22 @@ $(document).ready(function()
 
     $(assetsBtn).insertAfter($("#settings_btn"));
     $(purchaseBtn).insertAfter($("#assetsBtn"));
+
+
+    $("#assetsBtn").hover(function() {
+    $(this).addClass("ui-state-hover").addClass("ui-state-highlight").addClass("ui-state-focus").removeClass("ui-state-default");
+     }, function() {
+    $(this).addClass("ui-state-default").removeClass("ui-state-hover").removeClass("ui-state-highlight").removeClass("ui-state-focus");
+     });
+
+    $("#purchaseBtn").hover(function() {
+    $(this).addClass("ui-state-hover").addClass("ui-state-highlight").addClass("ui-state-focus").removeClass("ui-state-default");
+     }, function() {
+    $(this).addClass("ui-state-default").removeClass("ui-state-hover").removeClass("ui-state-highlight").removeClass("ui-state-focus");
+     });
+
+
+    
 
 })
 
