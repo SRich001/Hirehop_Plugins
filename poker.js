@@ -6,13 +6,16 @@ $(document).ready(function(){
 
     if(typeof($.custom.job_edit)!='undefined')
         {
+            console.log("here")
 
          $.widget("custom.job_edit",
             {
 
             _init_main: function()
             {
+              console.log("here2")
               this._super(arguments);
+              console.log("here3")
 
               alert("Working!!");
 
