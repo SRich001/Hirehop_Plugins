@@ -3,8 +3,10 @@
     //     if(curLoc != "https://myhirehop.com/home.php") return;
 
 
+    $(document).ready(function(){
 
-         $.widget("custom.job_edit",
+
+        $.widget("custom.job_edit", $custom.job_edit,
             {
 
             _init_main: function()
@@ -18,10 +20,14 @@
               $("<span>",{ html:" TEST"}).insertAfter(this.memo_section);
 
             }
+
+
+
+         });
+
+         
         
-        
-        
-        });
+    });
 
 
 
