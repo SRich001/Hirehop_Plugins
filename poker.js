@@ -2,8 +2,7 @@
         
     //     if(curLoc != "https://myhirehop.com/home.php") return;
 
-    if(typeof($.custom.job_edit)!='undefined')
-        {
+
 
          $.widget("custom.job_edit",
             {
@@ -17,16 +16,13 @@
               alert("Working!!");
 
               $("<span>",{ html:" TEST"}).insertAfter(this.memo_section);
-              
+
             }
         
         
         
         });
 
-          
-
-    }
 
 
 
