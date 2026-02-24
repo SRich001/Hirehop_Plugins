@@ -23,7 +23,7 @@ $(document).ready(function(){
         if(curLoc != "https://myhirehop.com/modules/stock/") return;
 
 
-          $.widget("custom.stock_page", $.custom.stock_equipment,{
+          $.widget("custom.stock_page", $.custom.hh_grid_categories_page,{
 
             _init_main: function()
             {
