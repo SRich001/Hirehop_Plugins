@@ -18,6 +18,10 @@ $(document).ready(function(){
 
         //   serialNum = curLoc.slice(44, -11);
 
+        var curLoc = $(location).prop('href');
+        
+        if(curLoc != "https://myhirehop.com/modules/stock/") return;
+
 
           $.widget("custom.stock_page", $.custom.stock_equipment,{
 
