@@ -5,7 +5,7 @@
 
     $(document).ready(function(){
 
-
+        
 
 
         $.widget("custom.job_edit", $.custom.job_edit,
@@ -17,7 +17,7 @@
               this._super(arguments);
 
 
-              alert("Working!!");
+              $("<span>",{ html:" TEST"}).insertAfter(this.memo_section);
 
             }
 
