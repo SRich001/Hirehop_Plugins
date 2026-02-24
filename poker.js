@@ -12,7 +12,6 @@ $(document).ready(function(){
               this._super(arguments);
 
               //$("<span>",{ html:" TEST"}).insertAfter(this.memo_section);
-              $(this.memo_section).replaceWith( "<span>TEST</span>" );
 
 
             }
