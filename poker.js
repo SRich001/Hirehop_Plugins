@@ -14,21 +14,24 @@ $(document).ready(function(){
             _init_main: function()
             {
               console.log("here2")
-              this._super(arguments);
               console.log("here3")
 
               alert("Working!!");
 
-              //$("<span>",{ html:" TEST"}).insertAfter(this.memo_section);
+              $("<span>",{ html:" TEST"}).insertAfter(this.memo_section);
             }
           });
 
     }
 
 
+    
+
+
          
 
 })
+
 
 
 
