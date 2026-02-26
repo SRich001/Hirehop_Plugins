@@ -1,4 +1,4 @@
-//PLUGIN: PART_SEARCH V27
+//PLUGIN: PART_SEARCH V28
 //DESC: Add an option to search for assets by their part number from the home page. 
 
 
@@ -42,7 +42,7 @@ $(document).ready(function(){
                    +"&nbsp;"
                 +"<div style = \"display:inline-block\">"
                  +"<form action=\"javascript:getPart();\">"
-                  +"<input id=\"part_number\" class=\"numeric_input number_search\" inputMode=\"numeric\" type=\"tel\" maxlength=\"15\">"
+                  +"<input id=\"part_number\" class=\"number_search\" inputMode=\"numeric\" type=\"tel\" maxlength=\"15\">"
                    +"&nbsp;"
                   +"<button class=\"rec_open\" type=\"submit\"></button>"
                  +"</form>"
