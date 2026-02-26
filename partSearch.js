@@ -4,7 +4,7 @@
 
  function getPart(){
            input = document.getElementById("part_number").value;
-           url = "https://myhirehop.com/modules/stock/?serial=" + input + "#assets_tab"
+           url = "https://myhirehop.com/modules/stock/?serial=" + input + "#assets_tab";
            window.location.replace(url);
          };
 
@@ -12,7 +12,7 @@ $(document).ready(function(){
 
         var input = "none";
         var curLoc = $(location).prop('href');
-        var checkUrl = (curLoc.slice(22, 44))
+        var checkUrl = (curLoc.slice(22, 44));
         
         if(checkUrl == "modules/stock/?serial=")
           { 
