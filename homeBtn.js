@@ -2,7 +2,7 @@
 //DESC: Adds a dedicated home button to the top of the page. 
 
 function goHome(){
-    window.location.replace("https://myhirehop.com/home.php");
+    window.location.assign("https://myhirehop.com/home.php");
 }
 
 

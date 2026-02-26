@@ -2,11 +2,11 @@
 //DESC: Adds shortcut buttons to the homepage for quick access to particular pages. 
 
 function goToAssets(){
-    window.location.replace("https://myhirehop.com/modules/stock/#assets_tab");
+    window.location.assign("https://myhirehop.com/modules/stock/#assets_tab");
 }
 
 function goToPurchase(){
-    window.location.replace("https://myhirehop.com/modules/suppliers/");
+    window.location.assign("https://myhirehop.com/modules/suppliers/");
 }
 
 $(document).ready(function()
