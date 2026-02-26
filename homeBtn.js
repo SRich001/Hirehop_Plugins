@@ -1,4 +1,4 @@
-//PLUGIN: HOME_BTN V19
+//PLUGIN: HOME_BTN V20
 //DESC: Adds a dedicated home button to the top of the page. 
 
 function goHome(){
