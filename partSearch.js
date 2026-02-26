@@ -1,63 +1,68 @@
-//PLUGIN: PART_SEARCH V25
-//DESC: Replaces the barcode search with a Serial Number search and changes instances of "Barcode" to "Serial Number" on all pages. 
+//PLUGIN: PART_SEARCH V27
+//DESC: Add an option to search for assets by their part number from the home page. 
 
 
-// function getSerial(){
-//           input = document.getElementById("serial_number").value;
-//           url = "https://myhirehop.com/modules/stock/?serial=" + input + "#assets_tab"
-//           window.location.replace(url);
-//         };
+ function getPart(){
+           input = document.getElementById("part_number").value;
+           url = "https://myhirehop.com/modules/stock/?serial=" + input + "#assets_tab"
+           window.location.replace(url);
+         };
 
 $(document).ready(function(){
 
-        // var input = "none";
-        // var curLoc = $(location).prop('href');
-        // var checkUrl = (curLoc.slice(22, 44));
-        
-        // if(checkUrl == "modules/stock/?serial="){
-
-        //   serialNum = curLoc.slice(44, -11);
-
+        var input = "none";
         var curLoc = $(location).prop('href');
+        var checkUrl = (curLoc.slice(22, 44))
         
-        if(curLoc != "https://myhirehop.com/modules/stock/") return;
+        if(checkUrl == "modules/stock/?serial=")
+          { 
 
-
-          $.widget("custom.stock_page", $.custom.stock_page,{
+            $.widget("custom.stock_page", $.custom.stock_page,{
 
             _init_main: function()
             {
               this._super(arguments);
 
-              this.options.PART_NUMBER = "UNK0001";
+              partNum = curLoc.slice(44, -11);
+              this.options.PART_NUMBER = partNum; 
 
             }
-          })
-        
-        }
-        
-        // var searchBar = $( 
-        //     "<div style=\"max-width:655px; text-align:right; display:inline-block\">"
-        //       +"<div style=\"margin-top:6px\">"
-        //         +"<div style=\"width:auto;text-align:right;display:inline-block\" class=\"lang label\" data-label=\"serialNumTxt\">"
-        //           + "Serial number : "
-        //         +"</div>"
-        //            +"&nbsp;"
-        //         +"<div style = \"display:inline-block\">"
-        //          +"<form action=\"javascript:getSerial();\">"
-        //           +"<input id=\"serial_number\" class=\"numeric_input number_search\" inputMode=\"numeric\" type=\"tel\" maxlength=\"15\">"
-        //            +"&nbsp;"
-        //           +"<button class=\"rec_open\" type=\"submit\"></button>"
-        //          +"</form>"
-        //         +"</div>"
-        //        +"</div>"
-        //     +"</div>") 
+
+             }
+            )
+
+          }
+
+        var searchBar = $( 
+            "<div style=\"max-width:655px; text-align:right; display:inline-block\">"
+              +"<div style=\"margin-top:6px\">"
+                +"<div style=\"width:auto;text-align:right;display:inline-block\" class=\"lang label\" data-label=\"partNumTxt\">"
+                  + "Part number : "
+                +"</div>"
+                   +"&nbsp;"
+                +"<div style = \"display:inline-block\">"
+                 +"<form action=\"javascript:getPart();\">"
+                  +"<input id=\"part_number\" class=\"numeric_input number_search\" inputMode=\"numeric\" type=\"tel\" maxlength=\"15\">"
+                   +"&nbsp;"
+                  +"<button class=\"rec_open\" type=\"submit\"></button>"
+                 +"</form>"
+                +"</div>"
+               +"</div>"
+            +"</div>") 
 
 
-        // $("#search_by_number_content").append(searchBar);
+        $("#search_by_number_content").append(searchBar);
+
+
+        
+    
+
+
+      }
+      
 
 	);
 
-  //id="gs_astSERIAL"
+ 
 
     
