@@ -1,11 +1,11 @@
-//PLUGIN: PART_SEARCH V28
+//PLUGIN: PART_SEARCH V29
 //DESC: Add an option to search for assets by their part number from the home page. 
 
 
  function getPart(){
            input = document.getElementById("part_number").value;
            url = "https://myhirehop.com/modules/stock/?serial=" + input + "#assets_tab";
-           window.location.replace(url);
+           window.location.assign(url);
          };
 
 $(document).ready(function(){
