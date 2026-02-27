@@ -5,6 +5,10 @@ function goToAssets2(){
     window.location.assign("https://myhirehop.com/modules/stock/#assets_tab");
 }
 
+
+var curLoc = $(location).prop('href');
+if(curLoc != "https://myhirehop.com/modules/suppliers/") return;
+
 var assetsPop = $(
 
     "<span \"onclick = goToAssets2()\" class=\"ui-icon ui-icon-box\"></span>" 
