@@ -8,20 +8,20 @@
 
         var curLoc = $(location).prop('href');
         
-        if(curLoc != "https://myhirehop.com/home.php") return;
+        if(curLoc != "https://myhirehop.com/modules/suppliers/") return;
 
 
 
-        $.widget("custom.job_edit", $.custom.job_edit,
+        $.widget("custom.subcontractors", $.custom.subcontractors,
             {
 
             _init_main: function()
             {
 
-              this._super(arguments);
+              this._super(arguments); 
 
 
-              $("<span>",{ html:" TEST"}).insertAfter(this.memo_section);
+              $("<span>",{ html:" TEST"}).insertAfter(this.info_table);
 
             }
 
