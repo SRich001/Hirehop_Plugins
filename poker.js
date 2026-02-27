@@ -4,7 +4,7 @@
 
 
         //Add project code bar UI
-        //
+        //Lala
 
         var curLoc = $(location).prop('href');
         
