@@ -20,6 +20,8 @@
 
               this._super(arguments); 
 
+              console.log("HERE");
+
 
               $("<span>",{ html:" TEST"}).insertAfter(this.info_table);
 
