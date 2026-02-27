@@ -10,6 +10,8 @@
         
         if(curLoc != "https://myhirehop.com/modules/suppliers/") return;
 
+        console.log("Whats up girlie?")
+
 
 
         $.widget("custom.subcontractors", $.custom.subcontractors,
