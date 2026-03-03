@@ -25,12 +25,11 @@ $.widget("custom.subcontractors", $.custom.subcontractors,
 
                     this._super(arguments);
 
-                    $(assetsPop).appendTo(bottom_menu); 
+                    $(assetsPop).appendTo(this.bottom_menu); 
 
                 }
 
             });
-
 
 
 
