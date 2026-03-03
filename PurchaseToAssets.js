@@ -25,7 +25,7 @@ $.widget("custom.subcontractors", $.custom.subcontractors,
 
                     this._super(arguments);
 
-                    $(assetsPop).appendTo(this.bottom_menu); 
+                    $(assetsPop).appendTo(this._init_bottom_menu().bottom_popup_menu); 
 
                 }
 
