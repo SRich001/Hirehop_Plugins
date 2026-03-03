@@ -14,9 +14,12 @@ if(curLoc != "https://myhirehop.com/modules/suppliers/") return;
 
 
 var assetsPop = $(
-    "<li>", {
-			html:'<span class="ui-icon ui-icon-box"></span>'+ 'Go to Assets'
-		})
+    "<li class=\"ui-menu-item\">"
+      + "<span class=\"ui-icon ui-icon-box\">"
+      + "Go to Assets"
+      + "</span>"
+      + "</li>"
+    )
     
 $.widget("custom.subcontractors", $.custom.subcontractors,
             {
