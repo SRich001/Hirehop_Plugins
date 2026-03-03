@@ -20,19 +20,16 @@ var assetsPop = $("<li>", {
 $.widget("custom.subcontractors", $.custom.subcontractors,
             {
 
-                _init_main: function()
+                _init_bottom_menu: function()
                 {
 
                     this._super(arguments);
 
-                    $(assetsPop).appendTo(this._init_bottom_menu().bottom_popup_menu); 
+                    $(assetsPop).appendTo(this.bottom_popup_menu); 
 
                 }
 
             });
-
-
-
 
 
 })
