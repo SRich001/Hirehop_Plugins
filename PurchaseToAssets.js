@@ -1,4 +1,4 @@
-//PLUGIN: PURCHASE_TO_ASSETS
+//PLUGIN: PURCHASE_TO_ASSETS V11
 //DESC: Adds a more convenient transition between the purchase orders page and the assets page.
 
 $(document).ready(function(){
@@ -14,10 +14,10 @@ if(curLoc != "https://myhirehop.com/modules/suppliers/") return;
 
 
 var assetsPop = $(
-      "<li class=\"ui-menu-item\">"
+      "<li class=\"ui-menu-item\" onClick=\"goToAssets2()\">"
       + "<span class=\"ui-icon ui-icon-box\">"
       + "</span>"
-      + "Go to Assets"
+      + "Go to Assets >>>"
       + "</li>"
     )
     
