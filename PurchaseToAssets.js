@@ -1,13 +1,11 @@
 //PLUGIN: PURCHASE_TO_ASSETS V11
 //DESC: Adds a more convenient transition between the purchase orders page and the assets page.
 
-$(document).ready(function(){
-
-
 function goToAssets2(){
     window.location.assign("https://myhirehop.com/modules/stock/#assets_tab");
 }
 
+$(document).ready(function(){
 
 var curLoc = $(location).prop('href');
 if(curLoc != "https://myhirehop.com/modules/suppliers/") return;
