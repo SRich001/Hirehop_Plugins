@@ -1,3 +1,6 @@
+//PLUGIN: PURCHASE_TO_ASSETS
+//DESC: Adds a more convenient transition between the purchase orders page and the assets page.
+
 $(document).ready(function(){
 
 
@@ -9,12 +12,11 @@ function goToAssets2(){
 var curLoc = $(location).prop('href');
 if(curLoc != "https://myhirehop.com/modules/suppliers/") return;
 
-var assetsPop = $(
 
-    "<span \"onclick = goToAssets2()\" class=\"ui-icon ui-icon-box\"></span>" 
-    + "Go to Assets"
-)
- 
+var assetsPop = $("<li>", {
+			html:'<span class="ui-icon ui-icon-minusthick"></span>'+ "Go to Assets"
+		})
+    
 $.widget("custom.subcontractors", $.custom.subcontractors,
             {
 
@@ -23,11 +25,14 @@ $.widget("custom.subcontractors", $.custom.subcontractors,
 
                     this._super(arguments);
 
-                    $(assetsPop).appendTo(this.bottom_popup_menu); 
+                    $(assetsPop).appendTo(bottom_popup_menu); 
 
                 }
 
             });
+
+
+
 
 
 
