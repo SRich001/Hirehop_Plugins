@@ -14,7 +14,7 @@ if(curLoc != "https://myhirehop.com/modules/suppliers/") return;
 
 
 var assetsPop = $(
-      "<li class=\"ui-menu-item\" onClick=\"goToAssets2()\">"
+      "<li onclick=\"goToAssets2()\" class=\"ui-menu-item\" >"
       + "<span class=\"ui-icon ui-icon-box\">"
       + "</span>"
       + "Go to Assets >>>"
