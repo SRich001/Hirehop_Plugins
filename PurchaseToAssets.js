@@ -14,10 +14,10 @@ if(curLoc != "https://myhirehop.com/modules/suppliers/") return;
 
 
 var assetsPop = $(
-    "<li class=\"ui-menu-item\">"
+      "<li class=\"ui-menu-item\">"
       + "<span class=\"ui-icon ui-icon-box\">"
-      + "Go to Assets"
       + "</span>"
+      + "Go to Assets"
       + "</li>"
     )
     
