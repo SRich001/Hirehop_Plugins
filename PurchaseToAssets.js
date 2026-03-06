@@ -27,9 +27,9 @@ $.widget("custom.subcontractors", $.custom.subcontractors,
 
                     this._super(arguments);
 
-                    $(assetsPop).appendTo(this.bottom_popup_menu); 
-
-                }
+                    $(assetsPop).appendTo(this.bottom_popup_menu ); 
+ 
+                } 
 
             });
 
