@@ -16,7 +16,7 @@ var assetsPop = $(
       + "<span class=\"ui-icon ui-icon-box\">"
       + "</span>"
       + "Go to Assets >>>"
-      + "</li>"
+      + "</li>" 
     )
     
 $.widget("custom.subcontractors", $.custom.subcontractors,
@@ -32,6 +32,5 @@ $.widget("custom.subcontractors", $.custom.subcontractors,
                 } 
 
             });
-
 
 })

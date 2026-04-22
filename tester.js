@@ -1,0 +1,84 @@
+   
+
+    function goToAssets2(){
+
+
+    
+
+    if (this.is_locked()) return;
+
+	var that = this;
+	
+	var sub_rowid = that.grid.jqGrid('getGridParam','selrow');
+	if (!sub_rowid) return;
+
+
+    var node = false;
+    node = this.supplying.jstree("get_selected", true);
+	if (node.length != 1)
+	{
+		error_message("You can only edit one item at once.");// HACK_LANG - Should never happen, only if hacked
+		return;
+	}
+	else
+		node = node[0];
+
+
+
+    if(node){
+        alert(node.data.ITEM);
+    }
+    
+    }
+
+//WHEN UPDATING REMEMBER TO TAKE A LOOK AT THE RIGHT CLICK ASSETS BUTTON ON THE STOCK PAGE. MIGHT BE THE KEY
+//CHECK FILL_DETAILS and ROWID
+
+//Try pulling from the node data in the go to assets function, in the same way as the subcontractors edit function. 
+//CHECK 4095 SUBCONTRACTOR
+
+//CHECK REPORTS >> STOCK VALUATION FOR SERIAL NUMBER CALL!
+
+
+
+$(document).ready(function(){
+
+var curLoc = $(location).prop('href');
+if(curLoc != "https://myhirehop.com/modules/suppliers/") return;
+
+
+var assetsPop = $(
+      "<li onclick=\"goToAssets2()\" class=\"ui-menu-item\" >"
+      + "<span class=\"ui-icon ui-icon-box\">"
+      + "</span>"
+      + "Go to Assets >>>"
+      + "</li>" 
+    )
+    
+$.widget("custom.subcontractors", $.custom.subcontractors,
+            {
+
+                _init_bottom_menu: function()
+                {
+
+                    this._super(arguments);
+
+                    $(assetsPop).appendTo(this.bottom_popup_menu ); 
+ 
+                } 
+
+            });
+
+})
+
+
+
+
+         
+
+
+
+
+
+
+    
