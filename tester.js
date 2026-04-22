@@ -2,16 +2,12 @@
 
     function goToAssets2(){
 
-
-    
-
     if (this.is_locked()) return;
 
 	var that = this;
 	
-	var sub_rowid = that.grid.jqGrid('getGridParam','selrow');
-	if (!sub_rowid) return;
-
+	// var sub_rowid = that.grid.jqGrid('getGridParam','selrow');
+	// if (!sub_rowid) return;
 
     var node = false;
     node = this.supplying.jstree("get_selected", true);
@@ -28,7 +24,7 @@
     if(node){
         alert(node.data.ITEM);
     }
-    
+
     }
 
 //WHEN UPDATING REMEMBER TO TAKE A LOOK AT THE RIGHT CLICK ASSETS BUTTON ON THE STOCK PAGE. MIGHT BE THE KEY
