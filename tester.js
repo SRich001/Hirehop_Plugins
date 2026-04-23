@@ -1,8 +1,6 @@
    //FRAMEWORKS grid_get_rowData
 
     
-//WHEN UPDATING REMEMBER TO TAKE A LOOK AT THE RIGHT CLICK ASSETS BUTTON ON THE STOCK PAGE. MIGHT BE THE KEY
-//CHECK FILL_DETAILS and ROWID
 
 //Try pulling from the node data in the go to assets function, in the same way as the subcontractors edit function. 
 //CHECK 4095 SUBCONTRACTOR
