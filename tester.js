@@ -1,14 +1,3 @@
-   //FRAMEWORKS grid_get_rowData
-
-    
-
-//Try pulling from the node data in the go to assets function, in the same way as the subcontractors edit function. 
-//CHECK 4095 SUBCONTRACTOR
-
-//CHECK REPORTS >> STOCK VALUATION FOR SERIAL NUMBER CALL!
-
-
-
 $(document).ready(function(){
 
 var curLoc = $(location).prop('href');
@@ -23,6 +12,14 @@ var assetsPop = $(
       + "</li>" 
     )
     
+
+
+//Try pulling from the node data in the go to assets function, in the same way as the subcontractors edit function. 
+//CHECK 4095 SUBCONTRACTOR
+//CHECK REPORTS >> STOCK VALUATION FOR SERIAL NUMBER CALL!
+
+
+
 $.widget("custom.subcontractors", $.custom.subcontractors,
             {
 
