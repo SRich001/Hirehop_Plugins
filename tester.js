@@ -1,32 +1,6 @@
-   
+   //FRAMEWORKS grid_get_rowData
 
-    function goToAssets2(){
-
-    if (this.is_locked()) return;
-
-	var that = this;
-	
-	// var sub_rowid = that.grid.jqGrid('getGridParam','selrow');
-	// if (!sub_rowid) return;
-
-    var node = false;
-    node = this.supplying.jstree("get_selected", true);
-	if (node.length != 1)
-	{
-		error_message("You can only edit one item at once.");// HACK_LANG - Should never happen, only if hacked
-		return;
-	}
-	else
-		node = node[0];
-
-
-
-    if(node){
-        alert(node.data.ITEM);
-    }
-
-    }
-
+    
 //WHEN UPDATING REMEMBER TO TAKE A LOOK AT THE RIGHT CLICK ASSETS BUTTON ON THE STOCK PAGE. MIGHT BE THE KEY
 //CHECK FILL_DETAILS and ROWID
 
@@ -61,11 +35,44 @@ $.widget("custom.subcontractors", $.custom.subcontractors,
 
                     $(assetsPop).appendTo(this.bottom_popup_menu ); 
  
-                } 
+                },
 
-            });
+                goToAssets2: function() {
+                   
+
+                   if (this.is_locked()) return;
+
+	               var that = this;
+	
+	               var sub_rowid = that.grid.jqGrid('getGridParam','selrow');
+
+	               if (!sub_rowid) return;
+
+                   var node = false;
+
+                   node = this.supplying.jstree("get_selected", true);
+
+	               if (node.length != 1)
+	               {
+		           error_message("You can only edit one item at once.");
+		           return;
+	               }
+	               else
+		           node = node[0];
+
+                   if(node){
+                      alert(node.data.ITEM);
+                    }
+
+    
+
+                   }
+
+                  });
 
 })
+
+
 
 
 
