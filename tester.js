@@ -50,16 +50,19 @@ $.widget("custom.subcontractors", $.custom.subcontractors,
 
 
 
-                        $( "<li onclick=\"goToAssets2()\" class=\"ui-menu-item\" >"
-                      + "<span class=\"ui-icon ui-icon-box\">"
-                      + "</span>"
-                      + "Go to Assets >>>"
-                      + "</li>" ).appendTo(this.bottom_popup_menu ); 
+                    
 
 
     
 
-                    }                  
+                    }   
+                    
+                    
+                    $( "<li onclick=\"goToAssets2()\" class=\"ui-menu-item\" >"
+                      + "<span class=\"ui-icon ui-icon-box\">"
+                      + "</span>"
+                      + "Go to Assets >>>"
+                      + "</li>" ).appendTo(this.bottom_popup_menu ); 
  
                 },
 
