@@ -23,7 +23,7 @@ $.widget("custom.subcontractors", $.custom.subcontractors,
             {  
                 
                 
-                init_edit_item: function()
+                _init_edit_item: function()
                 {
 
                     this._super(arguments);
