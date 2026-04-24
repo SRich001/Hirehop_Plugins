@@ -15,7 +15,7 @@ if(curLoc != "https://myhirehop.com/modules/suppliers/") return;
 
 //Try pulling from the node data in the go to assets function, in the same way as the subcontractors edit function. 
 //CHECK 4095 SUBCONTRACTOR
-//CHECK REPORTS >> STOCK VALUATION FOR SERIAL NUMBER CALL!!
+//CHECK REPORTS >> STOCK VALUATION FOR SERIAL NUMBER CALL!
 
 
 
