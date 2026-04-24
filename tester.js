@@ -4,21 +4,9 @@ var curLoc = $(location).prop('href');
 if(curLoc != "https://myhirehop.com/modules/suppliers/") return;
 
 
-var assetsPop = $(
-      "<li onclick=\"goToAssets2()\" class=\"ui-menu-item\" >"
-      + "<span class=\"ui-icon ui-icon-box\">"
-      + "</span>"
-      + "Go to Assets >>>"
-      + "</li>" 
-    )
-    
-
-
 //Try pulling from the node data in the go to assets function, in the same way as the subcontractors edit function. 
 //CHECK 4095 SUBCONTRACTOR
 //CHECK REPORTS >> STOCK VALUATION FOR SERIAL NUMBER CALL!!
-
-
 
 $.widget("custom.subcontractors", $.custom.subcontractors,
             {
@@ -28,7 +16,11 @@ $.widget("custom.subcontractors", $.custom.subcontractors,
 
                     this._super(arguments);
 
-                    $(assetsPop).appendTo(this.bottom_popup_menu ); 
+                    $( "<li onclick=\"goToAssets2()\" class=\"ui-menu-item\" >"
+                      + "<span class=\"ui-icon ui-icon-box\">"
+                      + "</span>"
+                      + "Go to Assets >>>"
+                      + "</li>" ).appendTo(this.bottom_popup_menu ); 
  
                 },
 
