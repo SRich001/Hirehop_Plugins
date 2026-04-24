@@ -11,6 +11,21 @@ if(curLoc != "https://myhirehop.com/modules/suppliers/") return;
 $.widget("custom.subcontractors", $.custom.subcontractors,
             {
 
+                _init_bottom_menu: function()
+                {
+
+                    this._super(arguments);
+
+                    // $( "<li onclick=\"goToAssets2()\" class=\"ui-menu-item\" >"
+                    //   + "<span class=\"ui-icon ui-icon-box\">"
+                    //   + "</span>"
+                    //   + "Go to Assets >>>"
+                    //   + "</li>" ).appendTo(this.bottom_popup_menu ); 
+
+                    this.goToAssets2();
+ 
+                },
+
                 goToAssets2: function() {
                    
 
@@ -40,22 +55,7 @@ $.widget("custom.subcontractors", $.custom.subcontractors,
 
     
 
-                   },
-
-                _init_bottom_menu: function()
-                {
-
-                    this._super(arguments);
-
-                    $( "<li onclick=\"goToAssets2()\" class=\"ui-menu-item\" >"
-                      + "<span class=\"ui-icon ui-icon-box\">"
-                      + "</span>"
-                      + "Go to Assets >>>"
-                      + "</li>" ).appendTo(this.bottom_popup_menu ); 
- 
-                },
-
-                
+                   }
 
                   });
 
