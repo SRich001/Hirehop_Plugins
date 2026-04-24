@@ -37,10 +37,7 @@ $.widget("custom.subcontractors", $.custom.subcontractors,
 
                     $("li").click(function(){
 
-                       if (this.is_locked()) return;
-
-	                   var that = this;
-	
+                       
 	                   var sub_rowid = that.grid.jqGrid('getGridParam','selrow');
 
 	                   if (!sub_rowid) return;
