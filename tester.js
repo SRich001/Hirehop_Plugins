@@ -28,17 +28,15 @@ $.widget("custom.subcontractors", $.custom.subcontractors,
                     this._super(arguments);
 
                     
-                    $( "<li onclick=\"goToAssets2()\" class=\"ui-menu-item\" >"
+                    $( "<li class=\"ui-menu-item\" >"
                       + "<span class=\"ui-icon ui-icon-box\">"
                       + "</span>"
                       + "Go to Assets >>>"
                       + "</li>" ).appendTo(this.bottom_popup_menu ); 
- 
-                },
 
 
-                goToAssets2: function()
-{
+                    $("li").click(function(){
+
                        if (this.is_locked()) return;
 
 	                   var that = this;
@@ -63,9 +61,41 @@ $.widget("custom.subcontractors", $.custom.subcontractors,
                           alert(node.data.ITEM);
                         }
 
+
+                    });
+ 
+                },
+
+
+//                 goToAssets2: function()
+// {
+//                        if (this.is_locked()) return;
+
+// 	                   var that = this;
+	
+// 	                   var sub_rowid = that.grid.jqGrid('getGridParam','selrow');
+
+// 	                   if (!sub_rowid) return;
+
+//                        var node = false;
+
+//                        node = this.supplying.jstree("get_selected", true);
+
+// 	                   if (node.length != 1)
+// 	                   {
+// 		               error_message("You can only edit one item at once.");
+// 		               return;
+// 	                   }
+// 	                   else
+// 		               node = node[0];
+
+//                        if(node){
+//                           alert(node.data.ITEM);
+//                         }
+
     
 
-                    }   
+//                     }   
 
 
 
