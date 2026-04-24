@@ -11,7 +11,7 @@ if(curLoc != "https://myhirehop.com/modules/suppliers/") return;
 $.widget("custom.subcontractors", $.custom.subcontractors,
             {
 
-                _init_bottom_menu: function()
+                _init_main: function()
                 {
 
                     this._super(arguments);
