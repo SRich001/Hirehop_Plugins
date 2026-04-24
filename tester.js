@@ -20,12 +20,7 @@ $.widget("custom.subcontractors", $.custom.subcontractors,
 
                     this._super(arguments);
 
-                    $( "<li onclick=\"goToAssets2()\" class=\"ui-menu-item\" >"
-                      + "<span class=\"ui-icon ui-icon-box\">"
-                      + "</span>"
-                      + "Go to Assets >>>"
-                      + "</li>" ).appendTo(this.bottom_popup_menu ); 
-
+                    
 
 
                  function goToAssets2(){
@@ -52,6 +47,15 @@ $.widget("custom.subcontractors", $.custom.subcontractors,
                        if(node){
                           alert(node.data.ITEM);
                         }
+
+
+
+                        $( "<li onclick=\"goToAssets2()\" class=\"ui-menu-item\" >"
+                      + "<span class=\"ui-icon ui-icon-box\">"
+                      + "</span>"
+                      + "Go to Assets >>>"
+                      + "</li>" ).appendTo(this.bottom_popup_menu ); 
+
 
     
 
