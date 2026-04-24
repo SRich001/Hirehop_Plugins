@@ -20,49 +20,72 @@ if(curLoc != "https://myhirehop.com/modules/suppliers/") return;
 
 
 $.widget("custom.subcontractors", $.custom.subcontractors,
-            {
-
-                _init_bottom_menu: function()
+            {  
+                
+                
+                init_edit_item: function()
                 {
 
                     this._super(arguments);
 
-                    
-                    $( "<li class=\"ui-menu-item\" >"
-                      + "<span class=\"ui-icon ui-icon-box\">"
-                      + "</span>"
-                      + "Go to Assets >>>"
-                      + "</li>" ).appendTo(this.bottom_popup_menu ); 
+                    if(node){
+                        alert(node.data.ITEM);
+                        console.log("here");
+                    }
 
 
-                    $("li").click(function(){
+                }
 
-	                   var that = this;
-	
-	                   var sub_rowid = that.grid.jqGrid('getGridParam','selrow');
-
-	                   if (!sub_rowid) return;
-
-                       var node = false;
-
-                       node = this.supplying.jstree("get_selected", true);
-
-	                   if (node.length != 1)
-	                   {
-		               error_message("You can only edit one item at once.");
-		               return;
-	                   }
-	                   else
-		               node = node[0];
-
-                       if(node){
-                          alert(node.data.ITEM);
-                        }
-
-
-                    });
  
-                },
+
+
+
+                  });
+
+})
+
+
+               // _init_bottom_menu: function()
+                // {
+
+                //     this._super(arguments);
+
+                    
+                //     $( "<li id=\"assets-btn\"class=\"ui-menu-item\" >"
+                //       + "<span class=\"ui-icon ui-icon-box\">"
+                //       + "</span>"
+                //       + "Go to Assets >>>"
+                //       + "</li>" ).appendTo(this.bottom_popup_menu ); 
+
+
+                //     $("#assets-btn").click(function(){
+
+	            //        var that = this;
+	
+	            //        var sub_rowid = that.grid.jqGrid('getGridParam','selrow');
+
+	            //        if (!sub_rowid) return;
+
+                //        var node = false;
+
+                //        node = this.supplying.jstree("get_selected", true);
+
+	            //        if (node.length != 1)
+	            //        {
+		        //        error_message("You can only edit one item at once.");
+		        //        return;
+	            //        }
+	            //        else
+		        //        node = node[0];
+
+                //        if(node){
+                //           alert(node.data.ITEM);
+                //         }
+
+
+                //     });
+ 
+                // },
 
 
 //                 goToAssets2: function()
@@ -94,12 +117,6 @@ $.widget("custom.subcontractors", $.custom.subcontractors,
     
 
 //                     }   
-
-
-
-                  });
-
-})
 
 
 
