@@ -51,7 +51,10 @@ $.widget("custom.subcontractors", $.custom.subcontractors,
 
                    if(node){
                       alert(node.data.ITEM);
+                      console.log("data found")
                     }
+
+                    console.log("end")
 
     
 
