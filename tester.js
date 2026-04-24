@@ -28,7 +28,7 @@ $.widget("custom.subcontractors", $.custom.subcontractors,
 
 
 
-                function goToAssets2(){
+                 function goToAssets2(){
                        if (this.is_locked()) return;
 
 	                   var that = this;
