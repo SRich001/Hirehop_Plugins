@@ -1,10 +1,6 @@
-$(document).ready(function(){
 
-var curLoc = $(location).prop('href');
-if(curLoc != "https://myhirehop.com/modules/suppliers/") return;
-
-
-function goToAssets2(){
+function goToAssets2()
+{
                        if (this.is_locked()) return;
 
 	                   var that = this;
@@ -33,6 +29,14 @@ function goToAssets2(){
 
                     }   
                     
+
+
+
+$(document).ready(function(){
+
+var curLoc = $(location).prop('href');
+if(curLoc != "https://myhirehop.com/modules/suppliers/") return;
+
 
 //Try pulling from the node data in the go to assets function, in the same way as the subcontractors edit function. 
 //CHECK 4095 SUBCONTRACTOR
