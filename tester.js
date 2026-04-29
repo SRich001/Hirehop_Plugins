@@ -19,6 +19,7 @@ $.widget("custom.subcontractors", $.custom.subcontractors,
                 {
 
                   this._super(arguments);
+                  
 
                   var assetsJumpBtn = $(
                           "<button id=\"assetsJumpBtn\" style=\"float: left;:\" class=\"search_tab_top_btn ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon-primary\" role=\"button\">"
@@ -31,10 +32,10 @@ $.widget("custom.subcontractors", $.custom.subcontractors,
 
                     $(assetsJumpBtn).appendTo(this.edit_item_dialog)
 
-                    var itemName = this.edt_text
+                    var itemName = this.edt_text;
                     
                     $("#assetsJumpBtn").click(function(){
-                      alert(itemName)
+                      alert(JSON.stringify(itemName));
                       window.location.assign("https://myhirehop.com/modules/stock/#assets_tab");
                     })
                   
