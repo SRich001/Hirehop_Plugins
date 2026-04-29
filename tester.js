@@ -4,12 +4,6 @@
 //CHECK REPORTS >> STOCK VALUATION FOR SERIAL NUMBER CALL!!!!
 
 
-function goToAssets2(itemName){
-    alert(itemName)
-    window.location.assign("https://myhirehop.com/modules/stock/#assets_tab");
-    
-
-}
 
 $(document).ready(function(){
 
@@ -17,27 +11,33 @@ var curLoc = $(location).prop('href');
 if(curLoc != "https://myhirehop.com/modules/suppliers/") return;
 
 
-var assetsJumpBtn = $(
-        "<button onclick=\"goToAssets2(itemName)\" style=\"float: right;:\" id=\"assetsBtn\" class=\"search_tab_top_btn ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon-primary\" role=\"button\">"
-            + "<span class=\"ui-button-icon-primary ui-icon ui-icon-box\">"
-            + "</span>"
-            + "<span class=\"ui-button-text\"> Assets"
-            + "</span>"
-       + "</button>"
-    );
-    
+
 $.widget("custom.subcontractors", $.custom.subcontractors,
             {
 
                 _init_edit_item: function()
                 {
 
-                    this._super(arguments);
-                    
-                    var itemName = this.edt_text
+                  this._super(arguments);
 
-                    $(assetsJumpBtn).appendTo(this.edit_item_dialog)
-        
+                  var assetsJumpBtn = $(
+                          "<button id=\"assetsJumpBtn\" style=\"float: left;:\" class=\"search_tab_top_btn ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon-primary\" role=\"button\">"
+                          + "<span class=\"ui-button-icon-primary ui-icon ui-icon-box\">"
+                          + "</span>"
+                          + "<span class=\"ui-button-text\"> Assets"
+                          + "</span>"
+                          + "</button>"
+                   );
+
+                    $("#assetsJumpBtn").appendTo(this.edit_item_dialog)
+
+                    var itemName = this.edt_text
+                    
+                    $("#assetsJumpBtn").click(function(){
+                      alert(itemName)
+                      window.location.assign("https://myhirehop.com/modules/stock/#assets_tab");
+                    })
+                  
                     
                 },
 
