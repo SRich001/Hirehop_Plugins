@@ -9,19 +9,19 @@ $(document).ready(function(){
 
 var curLoc = $(location).prop('href');
 if(curLoc != "https://myhirehop.com/modules/suppliers/") return;
-//var itemName = "null";
+var itemName = "null";
 
 
 
 $.widget("custom.subcontractors", $.custom.subcontractors,
             {
 
-                // _edit_item: function()
-                // {
-                //   itemName = this.edt_id.val
+                _edit_item: function()
+                {
+                  this._super(arguments);
+                  itemName = this.edt_id.val();
 
-                // }
-                // ,
+                },
 
                 _init_edit_item: function()
                 {
@@ -39,8 +39,6 @@ $.widget("custom.subcontractors", $.custom.subcontractors,
                    );
 
                     $(assetsJumpBtn).appendTo(this.edit_item_dialog)
-
-                    var itemName = this.edt_id.val();
                     
                     $("#assetsJumpBtn").click(function(){
                       alert(JSON.stringify(itemName));
