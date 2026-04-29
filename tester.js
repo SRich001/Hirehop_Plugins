@@ -29,7 +29,7 @@ $.widget("custom.subcontractors", $.custom.subcontractors,
                           + "</button>"
                    );
 
-                    $("#assetsJumpBtn").appendTo(this.edit_item_dialog)
+                    $(assetsJumpBtn).appendTo(this.edit_item_dialog)
 
                     var itemName = this.edt_text
                     
