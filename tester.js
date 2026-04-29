@@ -29,8 +29,6 @@ $.widget("custom.subcontractors", $.custom.subcontractors,
                 _edit_item: function()
                 {
 
-                    this._super(arguments);
-
                     $(assetsJumpBtn).appendTo(this.edit_item_dialog);
                     
                 } 
