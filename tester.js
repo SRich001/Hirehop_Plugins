@@ -1,6 +1,12 @@
+// CHECK 4145 in subcontractors this.edt_text
+//Try pulling from the node data in the go to assets function, in the same way as the subcontractors edit function. 
+//CHECK 4095 SUBCONTRACTOR
+//CHECK REPORTS >> STOCK VALUATION FOR SERIAL NUMBER CALL!!!!
 
 
-
+function goToAssets2(){
+    window.location.assign("https://myhirehop.com/modules/stock/#assets_tab");
+}
 
 $(document).ready(function(){
 
@@ -8,117 +14,30 @@ var curLoc = $(location).prop('href');
 if(curLoc != "https://myhirehop.com/modules/suppliers/") return;
 
 
-
-
-                    
-
-
-//Try pulling from the node data in the go to assets function, in the same way as the subcontractors edit function. 
-//CHECK 4095 SUBCONTRACTOR
-//CHECK REPORTS >> STOCK VALUATION FOR SERIAL NUMBER CALL!!!!
-
-
-
+var assetsJumpBtn = $(
+        "<button onclick=\"goToAssets2()\" style=\"float: right;:\" id=\"assetsBtn\" class=\"search_tab_top_btn ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon-primary\" role=\"button\">"
+            + "<span class=\"ui-button-icon-primary ui-icon ui-icon-box\">"
+            + "</span>"
+            + "<span class=\"ui-button-text\"> Assets"
+            + "</span>"
+       + "</button>"
+    );
+    
 $.widget("custom.subcontractors", $.custom.subcontractors,
-            {  
-                
-                
+            {
+
                 _edit_item: function()
                 {
 
                     this._super(arguments);
 
-                    if(node){
-                        alert(node.data.ITEM);
-                        console.log("here");
-                    }
+                    $(assetsJumpBtn).appendTo(this.edit_item_dialog);
+                    
+                } 
 
-
-                }
-
-
-
-
-                  });
+            });
 
 })
-
-
-               // _init_bottom_menu: function()
-                // {
-
-                //     this._super(arguments);
-
-                    
-                //     $( "<li id=\"assets-btn\"class=\"ui-menu-item\" >"
-                //       + "<span class=\"ui-icon ui-icon-box\">"
-                //       + "</span>"
-                //       + "Go to Assets >>>"
-                //       + "</li>" ).appendTo(this.bottom_popup_menu ); 
-
-
-                //     $("#assets-btn").click(function(){
-
-	            //        var that = this;
-	
-	            //        var sub_rowid = that.grid.jqGrid('getGridParam','selrow');
-
-	            //        if (!sub_rowid) return;
-
-                //        var node = false;
-
-                //        node = this.supplying.jstree("get_selected", true);
-
-	            //        if (node.length != 1)
-	            //        {
-		        //        error_message("You can only edit one item at once.");
-		        //        return;
-	            //        }
-	            //        else
-		        //        node = node[0];
-
-                //        if(node){
-                //           alert(node.data.ITEM);
-                //         }
-
-
-                //     });
- 
-                // },
-
-
-//                 goToAssets2: function()
-// {
-//                        if (this.is_locked()) return;
-
-// 	                   var that = this;
-	
-// 	                   var sub_rowid = that.grid.jqGrid('getGridParam','selrow');
-
-// 	                   if (!sub_rowid) return;
-
-//                        var node = false;
-
-//                        node = this.supplying.jstree("get_selected", true);
-
-// 	                   if (node.length != 1)
-// 	                   {
-// 		               error_message("You can only edit one item at once.");
-// 		               return;
-// 	                   }
-// 	                   else
-// 		               node = node[0];
-
-//                        if(node){
-//                           alert(node.data.ITEM);
-//                         }
-
-    
-
-//                     }   
-
-
-
 
 
 
