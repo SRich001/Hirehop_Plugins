@@ -16,7 +16,7 @@ var itemName = "null";
 $.widget("custom.subcontractors", $.custom.subcontractors,
             {
 
-                _edit_item: function()
+                _init_main: function()
                 {
                   this._super(arguments);
                   itemName = this.edt_id.val();
