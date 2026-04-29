@@ -32,7 +32,7 @@ $.widget("custom.subcontractors", $.custom.subcontractors,
 
                     $(assetsJumpBtn).appendTo(this.edit_item_dialog)
 
-                    var itemName = this.edt_id.val;
+                    var itemName = this.edt_id;
                     
                     $("#assetsJumpBtn").click(function(){
                       alert(JSON.stringify(itemName));
