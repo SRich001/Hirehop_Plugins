@@ -9,22 +9,10 @@ $(document).ready(function(){
 
 var curLoc = $(location).prop('href');
 if(curLoc != "https://myhirehop.com/modules/suppliers/") return;
-var itemName = "null";
-
-
-
 
 
 $.widget("custom.subcontractors", $.custom.subcontractors,
             { 
-
-                // _create: function()
-                // {
-                //   this._super(arguments);
-
-                // },
-
-                
 
                 _init_edit_item: function()
                 {
@@ -37,7 +25,7 @@ $.widget("custom.subcontractors", $.custom.subcontractors,
                           "<button id=\"assetsJumpBtn\" style=\"float: left;:\" class=\"search_tab_top_btn ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon-primary\" role=\"button\">"
                           + "<span class=\"ui-button-icon-primary ui-icon ui-icon-box\">"
                           + "</span>"
-                          + "<span class=\"ui-button-text\"> Assets"
+                          + "<span class=\"ui-button-text\"> Jump to Assets "
                           + "</span>"
                           + "</button>"
                    );
@@ -46,23 +34,13 @@ $.widget("custom.subcontractors", $.custom.subcontractors,
                     $(assetsJumpBtn).appendTo(this.edit_item_dialog)
                     
                     $("#assetsJumpBtn").click(function(){
-                      alert(JSON.stringify(that.edt_id.val()));
-                      window.location.assign("https://myhirehop.com/modules/stock/#assets_tab");
+                      itemID = JSON.stringify(that.edt_id.val());
+                      url = "https://myhirehop.com/modules/stock/equipment.php?id=" + itemID;
+                      window.location.assign(url);
                     })
                   
                     
-                },
-
-
-                // _edit_item: function()
-                // {
-                  
-                //   this._super(arguments);
-
-                //    itemName = this.edt_id.val();
-                  
-
-                // },
+                }
 
             });
 
