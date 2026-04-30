@@ -41,7 +41,7 @@ $.widget("custom.subcontractors", $.custom.subcontractors,
                           "<button id=\"assetsJumpBtn\" style=\"float: right;:\" class=\"search_tab_top_btn ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon-primary\" role=\"button\">"
                           + "<span class=\"ui-button-icon-primary ui-icon ui-icon-box\">"
                           + "</span>" 
-                          + "<span class=\"ui-button-text\"> Check Assets "
+                          + "<span class=\"ui-button-text\"> Go to Assets "
                           + "</span>"
                           + "</button>"
                    );
@@ -51,6 +51,7 @@ $.widget("custom.subcontractors", $.custom.subcontractors,
                     
                     $("#assetsJumpBtn").click(function(){
                       item = JSON.stringify(that.edt_desc.val()).slice(1, -1);
+                      item = item.replaceAll('/', ' ');
                       alert(item)
                       url = "https://myhirehop.com/modules/stock/?item=" + item + "#assets_tab";
                       window.location.assign(url);
