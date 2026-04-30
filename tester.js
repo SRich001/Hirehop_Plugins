@@ -59,6 +59,7 @@ $.widget("custom.subcontractors", $.custom.subcontractors,
                       item = JSON.stringify(that.edt_desc.val());
                       item.slice(1, -1)
                       item.replaceAll(' ', '_');
+                      alert(item);
                       url = "https://myhirehop.com/modules/stock/?item=" + item + "#assets_tab";
                       window.location.assign(url);
                     })
