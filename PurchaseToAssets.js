@@ -1,4 +1,4 @@
-//PLUGIN: PURCHASE_TO_ASSETS V12
+//PLUGIN: PURCHASE_TO_ASSETS V13
 //DESC: Provides a button to jump from a particular item in a purchase order to its corresponding asset. It can be accessed by selecting a particular item in a purchase order to edit. 
 //WARNING: This plugin works using the description of an item instead of the name, assuming both match. If the desc does not correspond to a name, no asset will be found. 
 
@@ -53,7 +53,6 @@ $.widget("custom.subcontractors", $.custom.subcontractors,
                     $("#assetsJumpBtn").click(function(){
                       item = JSON.stringify(that.edt_desc.val()).slice(1, -1);
                       item = item.replaceAll('/', ' '); 
-                      alert(item)
                       url = "https://myhirehop.com/modules/stock/?item=" + item + "#assets_tab";
                       window.location.assign(url);
                     })
