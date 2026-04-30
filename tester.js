@@ -16,7 +16,7 @@ if(curLoc.includes("modules/stock/?item="))
               item = curLoc.slice(42, -11);
               item = item.replaceAll('_', ' ');
               item = item.replaceAll('%27%27', '"');
-              this.options.TITLE = finalItem; 
+              this.options.TITLE = item; 
 
             }
 
