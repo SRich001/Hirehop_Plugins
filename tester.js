@@ -35,7 +35,7 @@ $.widget("custom.subcontractors", $.custom.subcontractors,
                     
                     $("#assetsJumpBtn").click(function(){
                       itemID = JSON.stringify(that.edt_id.val());
-                      url = "https://myhirehop.com/modules/stock/equipment.php?id=" + Number(itemID);
+                      url = "https://myhirehop.com/modules/stock/equipment.php?id=" + itemID.slice(1, -1);
                       window.location.assign(url);
                     })
                   
