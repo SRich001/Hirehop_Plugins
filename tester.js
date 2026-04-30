@@ -30,7 +30,7 @@ $.widget("custom.subcontractors", $.custom.subcontractors,
 
                   this._super(arguments);
 
-                  itemName = this.edt_txt.val();
+                  itemName = this.edt_id.val();
                   
 
                   var assetsJumpBtn = $(
