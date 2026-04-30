@@ -10,6 +10,7 @@ $(document).ready(function(){
 var curLoc = $(location).prop('href');
 if(curLoc != "https://myhirehop.com/modules/suppliers/") return;
 var checkUrl = (curLoc.slice(22, 42));
+alert(checkUrl);
 
 
 if(checkUrl == "modules/stock/?item=")
