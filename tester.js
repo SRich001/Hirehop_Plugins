@@ -29,6 +29,8 @@ $.widget("custom.subcontractors", $.custom.subcontractors,
                 _init_edit_item: function()
                 {
 
+                  var that = this
+
                   this._super(arguments);
 
                   var assetsJumpBtn = $(
