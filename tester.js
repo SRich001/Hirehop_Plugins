@@ -22,7 +22,7 @@ if(checkUrl == "modules/stock/?item=")
               this._super(arguments);
 
               itemName = curLoc.slice(42, -11);
-              console.log(itemName)
+              itemName.replaceAll('_', ' ');
               this.options.TITLE = itemName; 
 
             }
@@ -46,7 +46,7 @@ $.widget("custom.subcontractors", $.custom.subcontractors,
                   var assetsJumpBtn = $(
                           "<button id=\"assetsJumpBtn\" style=\"float: right;:\" class=\"search_tab_top_btn ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon-primary\" role=\"button\">"
                           + "<span class=\"ui-button-icon-primary ui-icon ui-icon-box\">"
-                          + "</span>"
+                          + "</span>" 
                           + "<span class=\"ui-button-text\"> Jump to Assets "
                           + "</span>"
                           + "</button>"
@@ -56,11 +56,10 @@ $.widget("custom.subcontractors", $.custom.subcontractors,
                     $(assetsJumpBtn).appendTo(this.edit_item_dialog)
                     
                     $("#assetsJumpBtn").click(function(){
-                      item = JSON.stringify(that.edt_desc.val());
-                      item.slice(1, -1)
-                      item.replaceAll(' ', '_');
+                      item = JSON.stringify(that.edt_desc.val()).slice(1, -1);
+                      urlItem.replaceAll(' ', '_');
                       alert(item);
-                      url = "https://myhirehop.com/modules/stock/?item=" + item + "#assets_tab";
+                      url = "https://myhirehop.com/modules/stock/?item=" + urlItem + "#assets_tab";
                       window.location.assign(url);
                     })
                   
