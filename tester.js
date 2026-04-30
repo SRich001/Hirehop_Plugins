@@ -1,16 +1,8 @@
-// CHECK 4145 in subcontractors this.edt_text
-//Try pulling from the node data in the go to assets function, in the same way as the subcontractors edit function. 
-//CHECK 4095 SUBCONTRACTOR
 //CHECK REPORTS >> STOCK VALUATION FOR SERIAL NUMBER CALL!!!!
-
-
 
 $(document).ready(function(){
 
 var curLoc = $(location).prop('href');
-if(curLoc != "https://myhirehop.com/modules/suppliers/") return;
-
-
 
 if(curLoc.includes("modules/stock/?item="))
   {
@@ -33,6 +25,7 @@ if(curLoc.includes("modules/stock/?item="))
 
   }
 
+if(curLoc != "https://myhirehop.com/modules/suppliers/") return;
 
 $.widget("custom.subcontractors", $.custom.subcontractors,
             { 
