@@ -9,11 +9,10 @@ $(document).ready(function(){
 
 var curLoc = $(location).prop('href');
 if(curLoc != "https://myhirehop.com/modules/suppliers/") return;
-var checkUrl = (curLoc.slice(22, 42));
-alert(checkUrl);
 
 
-if(checkUrl == "modules/stock/?item=")
+
+if(curLoc.includes("modules/stock/?item="))
   {
 
     $.widget("custom.stock_page", $.custom.stock_page,{
@@ -23,6 +22,7 @@ if(checkUrl == "modules/stock/?item=")
               this._super(arguments);
 
               itemName = curLoc.slice(42, -11);
+              alert(itemName)
               itemName.replaceAll('_', ' ');
               this.options.TITLE = itemName; 
 
