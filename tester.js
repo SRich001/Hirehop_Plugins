@@ -13,20 +13,24 @@ var itemName = "null";
 
 
 
+
+
 $.widget("custom.subcontractors", $.custom.subcontractors,
-            {
+            { 
 
-                _init_main: function()
-                {
-                  this._super(arguments);
-                  itemName = this.edt_id.val();
+                // _edit_item: function()
+                // {
+                //   this._super(arguments);
+                  
 
-                },
+                // },
 
                 _init_edit_item: function()
                 {
 
                   this._super(arguments);
+
+                  itemName = this.edt_txt.val();
                   
 
                   var assetsJumpBtn = $(
@@ -37,6 +41,7 @@ $.widget("custom.subcontractors", $.custom.subcontractors,
                           + "</span>"
                           + "</button>"
                    );
+
 
                     $(assetsJumpBtn).appendTo(this.edit_item_dialog)
                     
