@@ -18,19 +18,14 @@ var itemName = "null";
 $.widget("custom.subcontractors", $.custom.subcontractors,
             { 
 
-                // _edit_item: function()
-                // {
-                //   this._super(arguments);
-                  
-
-                // },
+                
 
                 _init_edit_item: function()
                 {
 
                   this._super(arguments);
 
-                  itemName = this.edt_id.val();
+                 
                   
 
                   var assetsJumpBtn = $(
@@ -51,6 +46,17 @@ $.widget("custom.subcontractors", $.custom.subcontractors,
                     })
                   
                     
+                },
+
+
+                _edit_item: function()
+                {
+                  
+                  this._super(arguments);
+
+                   itemName = this.edt_id.val();
+                  
+
                 },
 
             });
