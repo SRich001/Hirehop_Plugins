@@ -9,6 +9,27 @@ $(document).ready(function(){
 
 var curLoc = $(location).prop('href');
 if(curLoc != "https://myhirehop.com/modules/suppliers/") return;
+var checkUrl = (curLoc.slice(22, 42));
+
+
+if(checkUrl == "modules/stock/?item=")
+  {
+
+    $.widget("custom.stock_page", $.custom.stock_page,{
+
+            _init_main: function()
+            {
+              this._super(arguments);
+
+              itemName = curLoc.slice(42, -11);
+              this.options.TITLE = itemName; 
+
+            }
+
+             }
+            )
+
+  }
 
 
 $.widget("custom.subcontractors", $.custom.subcontractors,
@@ -35,9 +56,10 @@ $.widget("custom.subcontractors", $.custom.subcontractors,
                     
                     $("#assetsJumpBtn").click(function(){
                       item = JSON.stringify(that.edt_desc.val());
-                      alert(item);
-                      // url = "https://myhirehop.com/modules/stock/equipment.php?id=" + itemID.slice(1, -1);
-                      // window.location.assign(url);
+                      item.slice(1, -1)
+                      item.replaceAll(' ', '_');
+                      url = "https://myhirehop.com/modules/stock/?item=" + item + "#assets_tab";
+                      window.location.assign(url);
                     })
                   
                     
