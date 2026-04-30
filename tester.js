@@ -49,9 +49,10 @@ $.widget("custom.subcontractors", $.custom.subcontractors,
                     $(assetsJumpBtn).appendTo(this.edit_item_dialog)
                     
                     $("#assetsJumpBtn").click(function(){
-                      item = JSON.stringify(that.edt_desc.val()).slice(1, -1);
+                      item = JSON.stringify(that.edt_text).slice(1, -1);
                       urlItem = item.replaceAll(' ', '_');
                       url = "https://myhirehop.com/modules/stock/?item=" + urlItem + "#assets_tab";
+                      alert(urlItem);
                       window.location.assign(url);
                     })
                   
