@@ -13,10 +13,9 @@ if(curLoc.includes("modules/stock/?item="))
             {
               this._super(arguments);
 
-              itemName = curLoc.slice(42, -11);
-              alert(itemName)
-              itemName.replaceAll('_', ' ');
-              this.options.TITLE = itemName; 
+              itemFromUrl = curLoc.slice(42, -11);
+              finalItem = itemFromUrl.replaceAll('_', ' ');
+              this.options.TITLE = finalItem; 
 
             }
 
