@@ -18,15 +18,18 @@ var itemName = "null";
 $.widget("custom.subcontractors", $.custom.subcontractors,
             { 
 
+                // _create: function()
+                // {
+                //   this._super(arguments);
+
+                // },
+
                 
 
                 _init_edit_item: function()
                 {
 
                   this._super(arguments);
-
-                 
-                  
 
                   var assetsJumpBtn = $(
                           "<button id=\"assetsJumpBtn\" style=\"float: left;:\" class=\"search_tab_top_btn ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon-primary\" role=\"button\">"
@@ -41,7 +44,7 @@ $.widget("custom.subcontractors", $.custom.subcontractors,
                     $(assetsJumpBtn).appendTo(this.edit_item_dialog)
                     
                     $("#assetsJumpBtn").click(function(){
-                      alert(JSON.stringify(itemName));
+                      alert(JSON.stringify(that.edt_id.val()));
                       window.location.assign("https://myhirehop.com/modules/stock/#assets_tab");
                     })
                   
@@ -49,15 +52,15 @@ $.widget("custom.subcontractors", $.custom.subcontractors,
                 },
 
 
-                _edit_item: function()
-                {
+                // _edit_item: function()
+                // {
                   
-                  this._super(arguments);
+                //   this._super(arguments);
 
-                   itemName = this.edt_id.val();
+                //    itemName = this.edt_id.val();
                   
 
-                },
+                // },
 
             });
 
