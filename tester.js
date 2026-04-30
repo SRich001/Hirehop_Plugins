@@ -13,9 +13,9 @@ if(curLoc.includes("modules/stock/?item="))
             {
               this._super(arguments);
 
-              itemFromUrl = curLoc.slice(42, -11);
-              itemWithSpaces = itemFromUrl.replaceAll('_', ' ');
-              finalItem = itemWithSpaces.replaceAll('%27', '"');
+              item = curLoc.slice(42, -11);
+              item = item.replaceAll('_', ' ');
+              item = item.replaceAll('%27%27', '"');
               this.options.TITLE = finalItem; 
 
             }
@@ -41,7 +41,7 @@ $.widget("custom.subcontractors", $.custom.subcontractors,
                           "<button id=\"assetsJumpBtn\" style=\"float: right;:\" class=\"search_tab_top_btn ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon-primary\" role=\"button\">"
                           + "<span class=\"ui-button-icon-primary ui-icon ui-icon-box\">"
                           + "</span>" 
-                          + "<span class=\"ui-button-text\"> Jump to Assets "
+                          + "<span class=\"ui-button-text\"> Check Assets "
                           + "</span>"
                           + "</button>"
                    );
