@@ -15,7 +15,7 @@ if(curLoc.includes("modules/stock/?item="))
 
               itemFromUrl = curLoc.slice(42, -11);
               itemWithSpaces = itemFromUrl.replaceAll('_', ' ');
-              finalItem = itemFromUrl2.replaceAll('%27', '"');
+              finalItem = itemWithSpaces.replaceAll('%27', '"');
               this.options.TITLE = finalItem; 
 
             }
