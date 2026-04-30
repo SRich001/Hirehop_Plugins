@@ -22,6 +22,7 @@ if(checkUrl == "modules/stock/?item=")
               this._super(arguments);
 
               itemName = curLoc.slice(42, -11);
+              console.log(itemName)
               this.options.TITLE = itemName; 
 
             }
