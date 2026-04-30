@@ -13,9 +13,9 @@ if(curLoc.includes("modules/stock/?item="))
             {
               this._super(arguments);
 
-              item = curLoc.slice(42, -11);
-              item = item.replaceAll('_', ' ');
-              item = item.replaceAll('%27%27', '"');
+              decodeLoc = decodeURIComponent(curLoc);
+              item = decodeLoc.slice(42, -11);
+              
               this.options.TITLE = item; 
 
             }
